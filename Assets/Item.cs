@@ -1,5 +1,9 @@
 public enum Item
 {
     Shovel,
-    Key
+    Key,
+    WallSupport,
+    Rope,
+    Piton,
+    MetalPipe
 }
