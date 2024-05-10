@@ -1,4 +1,5 @@
 public enum Item
 {
-    Shovel
+    Shovel,
+    Key
 }

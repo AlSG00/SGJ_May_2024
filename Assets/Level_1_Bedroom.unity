@@ -236,7 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fa4d95b1cade345a6ce3b698466a33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 0
+  ItemType: 0
+  RequiredItemType: 0
+  RequiresAnItem: 0
 --- !u!1001 &50939084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,8 +408,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8389029, y: 0.9632197, z: 0.19324243}
-  m_Center: {x: 0.0029816355, y: 0.047190614, z: -0.05287267}
+  m_Size: {x: 1.473678, y: 1.6635052, z: 0.19324243}
+  m_Center: {x: -0.035565488, y: -0.008800105, z: -0.052872676}
 --- !u!114 &269557266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +422,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 0
+  ItemType: 0
+  RequiredItemType: 0
+  RequiresAnItem: 1
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
   _remainingDigs: 1

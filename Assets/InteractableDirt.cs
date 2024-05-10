@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,20 @@ public class InteractableDirt : InteractableItem
 
     public override void Interact()
     {
-        Digging?.Invoke(requiredItem, this);
+        //Digging?.Invoke(requiredItem, this);
+        RemoveDirt();
+       
+    }
+
+    private async void RemoveDirt()
+    {
+        await System.Threading.Tasks.Task.Delay(700);
+
+        _remainingDigs--;
+        if (_remainingDigs <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public override void ApplyOtherItem()

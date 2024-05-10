@@ -15,7 +15,7 @@ public class IgnorePlayerCollision : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Physics.IgnoreCollision(_collider, collision.collider);
+            Physics.IgnoreCollision(collision.gameObject.GetComponent<Collider>(), this.GetComponent<Collider>());
         }
     }
 }

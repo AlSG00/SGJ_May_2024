@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Lightswitcher : InteractableItem
 {
+    [SerializeField] private bool _isEnabled;
     [SerializeField] private bool _isActive;
     [SerializeField] private Light[] _lightArray;
     [SerializeField] private AudioSource _audioSource;
@@ -15,6 +16,11 @@ public class Lightswitcher : InteractableItem
 
     public override void Interact()
     {
+        if (_isEnabled == false)
+        {
+            return;
+        }
+
         SwitchLight();
     }
 

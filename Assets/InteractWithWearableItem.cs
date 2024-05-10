@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class InteractWithWearableItem : MonoBehaviour
 {
+    public Transform CurrentItem {
+    get
+        {
+            return _currentItem;
+        }
+    }
+
     [SerializeField] private Transform _handPivot;
     [SerializeField]  private Transform _currentItem;
     [SerializeField]  private Vector3 _currentPositionOffset;
@@ -13,15 +20,17 @@ public class InteractWithWearableItem : MonoBehaviour
     private void OnEnable()
     {
         InteractableShowel.PickingShovel += GetItem;
+        InteractableKey.PickingKey += GetItem;
         InteractableShowel.ShovelBroken += DropItem;
-        InteractableDirt.Digging += ApplyItemInHands;
+       // InteractableDirt.Digging += ApplyItemInHands;
     }
 
     private void OnDisable()
     {
         InteractableShowel.PickingShovel -= GetItem;
-        InteractableShowel.ShovelBroken += DropItem;
-        InteractableDirt.Digging -= ApplyItemInHands;
+        InteractableKey.PickingKey -= GetItem;
+        InteractableShowel.ShovelBroken -= DropItem;
+       // InteractableDirt.Digging -= ApplyItemInHands;
     }
 
     private void Update()
@@ -34,6 +43,11 @@ public class InteractWithWearableItem : MonoBehaviour
 
     private void GetItem(Transform item, Vector3 itemPositionOffset, Quaternion itemRotationOffset)
     {
+        if (_currentItem is not null)
+        {
+            Debug.Log("Hands are busy");
+        }
+
         item.parent = _handPivot;
         item.localPosition = _handPivot.localPosition + itemPositionOffset;
         item.localRotation = _handPivot.localRotation * itemRotationOffset;
@@ -54,19 +68,27 @@ public class InteractWithWearableItem : MonoBehaviour
         _currentItem = null;
     }
 
-    private void ApplyItemInHands(Item requiredItemType, InteractableItem interactableDirt)
+    //private void ApplyItemInHands(Item requiredItemType, InteractableItem interactableDirt)
+    //{
+    //    if (_currentItem is null)
+    //    {
+    //        return;
+    //    }
+
+    //    InteractableItem item = _currentItem.GetComponent<InteractableItem>();
+    //    if (item.ItemType != requiredItemType)
+    //    {
+    //        return;
+    //    }
+
+    //    item.UseAsync(interactableDirt);
+    //}
+
+    internal InteractableItem GetCurrentItem()
     {
-        if (_currentItem is null)
-        {
-            return;
-        }
+        InteractableItem item;
+        _currentItem.TryGetComponent<InteractableItem>(out item);
 
-        InteractableItem item = _currentItem.GetComponent<InteractableItem>();
-        if (item.itemType != requiredItemType)
-        {
-            return;
-        }
-
-        item.UseAsync(interactableDirt);
+        return item;
     }
 }

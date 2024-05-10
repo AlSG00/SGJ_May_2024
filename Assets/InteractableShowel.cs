@@ -36,7 +36,7 @@ public class InteractableShowel : InteractableItem, IDroppable
     }
 
     private bool _isUsing = false;
-    public async override void UseAsync(InteractableItem interactableItem)
+    public async override void UseAsync(/*InteractableItem interactableItem*/)
     {
         if (_isUsing)
         {
@@ -48,8 +48,6 @@ public class InteractableShowel : InteractableItem, IDroppable
         _animator.SetTrigger("Use");
         await System.Threading.Tasks.Task.Delay(550);
         _audioSource.PlayOneShot(_audioSource.clip);
-        await System.Threading.Tasks.Task.Delay(600);
-        interactableItem.ApplyOtherItem();
         await System.Threading.Tasks.Task.Delay(600);
 
         if (_remainingUses <= 0)
