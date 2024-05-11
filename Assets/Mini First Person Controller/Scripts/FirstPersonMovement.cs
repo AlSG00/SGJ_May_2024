@@ -44,12 +44,14 @@ public class FirstPersonMovement : MonoBehaviour
 
     void Update()
     {
-        Move();
+        //Move();
         CheckMovementState();
     }
 
     private void FixedUpdate()
     {
+        Move();
+
         Vector2 targetVelocity = new Vector2(_horizontalInput * _targetMovingSpeed, _verticalInput * _targetMovingSpeed);
 
         _rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y);

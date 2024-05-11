@@ -451,14 +451,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5922f18ba4d3b4681709008d6d4708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 0
   RequiredItemType: 0
   _internalAudio: {fileID: 8300000, guid: 10ddb8bbcbba51e4e929928fb568b57b, type: 3}
+  _useAudio: {fileID: 0}
   _inHandPositionOffset: {x: -0.5, y: 0.6, z: 0.572}
   _inHandRotationOffset: {x: 0.6841929, y: 0.68820053, z: 0.03631682, w: -0.23862371}
   colliderArray:
@@ -478,8 +481,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4774503, y: 0.18830448, z: 0.32549116}
-  m_Center: {x: -0.23873635, y: 0.00052402023, z: -0.0058371774}
+  m_Size: {x: 1.4774503, y: 0.3594322, z: 0.32549116}
+  m_Center: {x: -0.23874064, y: 0.0055970447, z: -0.0058375676}
 --- !u!54 &8663374151333833474
 Rigidbody:
   m_ObjectHideFlags: 0

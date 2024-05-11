@@ -21,14 +21,13 @@ public class AsyncSceneLoadTrigger : MonoBehaviour
         {
             return;
         }
-        gameObject.GetComponent<Collider>().enabled = false;
-
-        _triggerActivated = true;
 
         if (other.CompareTag("Player") == false)
         {
             return;
         }
+
+        _triggerActivated = true;
 
         if (_loadModeType == LoadMode.Load)
         {
@@ -39,5 +38,7 @@ public class AsyncSceneLoadTrigger : MonoBehaviour
             SceneManager.UnloadSceneAsync(_scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
             _ceiling.enabled = true;
         }
+
+        gameObject.GetComponent<Collider>().enabled = false;
     }
 }
