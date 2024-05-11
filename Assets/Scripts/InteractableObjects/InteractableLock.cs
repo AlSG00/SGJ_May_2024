@@ -16,6 +16,4 @@ public class InteractableLock : InteractableItem
 
         Destroy(gameObject, 3f);
     }
-
-
 }

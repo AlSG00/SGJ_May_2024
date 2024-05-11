@@ -69,6 +69,7 @@ public class FootstepAudioController : MonoBehaviour
         string surface = null;
         if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1f))
         {
+            Debug.Log($"{hit.transform.name} : {hit.transform.tag}");
             surface = hit.transform.tag;
         }
 

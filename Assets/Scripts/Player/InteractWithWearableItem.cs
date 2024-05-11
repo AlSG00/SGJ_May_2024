@@ -84,9 +84,11 @@ public class InteractWithWearableItem : MonoBehaviour
 
     internal InteractableItem GetCurrentItem()
     {
-        InteractableItem item;
-        _currentItem.TryGetComponent<InteractableItem>(out item);
-
+        InteractableItem item = null;
+        if (_currentItem != null)
+        {
+            _currentItem.TryGetComponent<InteractableItem>(out item);
+        }
         return item;
     }
 }

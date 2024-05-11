@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 8532919885376175735}
   m_Layer: 0
   m_Name: DoorHole (2)
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2053,7 +2053,7 @@ GameObject:
   - component: {fileID: 8532919886352484491}
   m_Layer: 0
   m_Name: BedroomFloorHole (1)
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

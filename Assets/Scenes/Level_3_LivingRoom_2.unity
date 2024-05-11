@@ -360,14 +360,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f6f8e2aa1d3c438d219b5eb40760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 3
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   ItemsToShow:
   - {fileID: 1511083163}
@@ -452,14 +455,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -1016,14 +1022,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f6f8e2aa1d3c438d219b5eb40760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 3
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   ItemsToShow:
   - {fileID: 1365316288}
@@ -1059,7 +1068,7 @@ GameObject:
   - component: {fileID: 801289587}
   - component: {fileID: 801289589}
   - component: {fileID: 801289588}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LoadTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,14 +1178,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -1293,14 +1305,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -1507,14 +1522,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -1616,14 +1634,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f6f8e2aa1d3c438d219b5eb40760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 5
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   ItemsToShow:
   - {fileID: 1691215571}
@@ -1805,14 +1826,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -1914,14 +1938,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f6f8e2aa1d3c438d219b5eb40760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 3
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   ItemsToShow:
   - {fileID: 1516481797}
@@ -2006,14 +2033,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -2130,14 +2160,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -2383,14 +2416,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -3631,14 +3667,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -4208,14 +4247,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f6f8e2aa1d3c438d219b5eb40760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 5
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   ItemsToShow:
   - {fileID: 1582726565}
@@ -4292,14 +4334,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 1
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -4467,7 +4512,7 @@ GameObject:
   - component: {fileID: 1887600543}
   - component: {fileID: 1887600545}
   - component: {fileID: 1887600544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: UnloadTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4577,14 +4622,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -4820,14 +4868,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e031f6442a330f745bb880bdfce3fbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   _dirtAudioSource: {fileID: 0}
   requiredItem: 0
@@ -4929,14 +4980,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23f6f8e2aa1d3c438d219b5eb40760c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
   RequiredItemType: 5
   _internalAudio: {fileID: 0}
+  _useAudio: {fileID: 0}
   _enabledOnStart: 0
   ItemsToShow:
   - {fileID: 1218999365}

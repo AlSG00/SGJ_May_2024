@@ -4485,7 +4485,7 @@ GameObject:
   - component: {fileID: 1753412937}
   - component: {fileID: 1753412939}
   - component: {fileID: 1753412938}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: UnloadTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4736,7 +4736,7 @@ GameObject:
   - component: {fileID: 1775478358}
   - component: {fileID: 1775478360}
   - component: {fileID: 1775478359}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LoadTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

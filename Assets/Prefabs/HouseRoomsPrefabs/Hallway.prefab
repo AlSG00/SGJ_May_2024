@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 5361323532759811519}
   - component: {fileID: 640632666978211235}
   - component: {fileID: 2122549187514612133}
+  - component: {fileID: 5186492854330652849}
   m_Layer: 0
   m_Name: Plane.007
   m_TagString: Carpet
@@ -308,6 +309,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5186492854330652849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002054350293855772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012896436, y: 0.049296036, z: 0.00020000273}
+  m_Center: {x: 0.00013335583, y: -0.0019486992, z: -0.000021957943}
 --- !u!1 &2775987428620446014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1446,7 @@ GameObject:
   - component: {fileID: 7500653595207972573}
   - component: {fileID: 837140223579181126}
   - component: {fileID: 639269096729377380}
+  - component: {fileID: 1513254769742101676}
   m_Layer: 0
   m_Name: Plane.008
   m_TagString: Carpet
@@ -1504,6 +1519,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1513254769742101676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297929951924128563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012450814, y: 0.050975483, z: 0.00025745342}
+  m_Center: {x: 0.00030137596, y: 0.0005964683, z: -0.000050212908}
 --- !u!1 &8657626640244954150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,8 +2182,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -1659942940949961471, guid: 195913d2b916a874bab3768d0156f958,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 2b4c7df777c74d34db45ffa6ca4e9d17, type: 2}
     - target: {fileID: 919132149155446097, guid: 6897205c7f001544583ae0c25fca9617,
         type: 3}
       propertyPath: m_Name

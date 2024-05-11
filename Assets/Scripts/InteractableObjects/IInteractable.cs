@@ -2,6 +2,7 @@ using UnityEngine;
 
 public abstract class InteractableItem : MonoBehaviour
 {
+    public string HintMessage;
     public string CantInteractMessage;
     public string NeedItemMessage;
     public string WrongItemMessage;
@@ -19,6 +20,15 @@ public abstract class InteractableItem : MonoBehaviour
         }
     }
     [SerializeField] protected AudioClip _internalAudio;
+
+    public AudioClip UseAudio
+    {
+        get
+        {
+            return _useAudio;
+        }
+    }
+    [SerializeField] protected AudioClip _useAudio;
 
     public abstract void Interact();
 

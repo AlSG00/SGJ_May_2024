@@ -21,6 +21,7 @@ public class AsyncSceneLoadTrigger : MonoBehaviour
         {
             return;
         }
+        gameObject.GetComponent<Collider>().enabled = false;
 
         _triggerActivated = true;
 

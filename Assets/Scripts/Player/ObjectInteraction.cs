@@ -5,17 +5,19 @@ public class ObjectInteraction : MonoBehaviour
     [SerializeField] private InteractWithWearableItem _wearableItem;
     [SerializeField] private Camera _playerCamera;
     [SerializeField] private float _raycastDistance;
+    [SerializeField] private LayerMask _layer;
     private RaycastHit _hit;
     private const string interactableTag = "Interactable";
 
     public static event System.Action<string> InteractResult;
+    public static event System.Action<string> InteractHint;
     public static event System.Action<AudioClip> InteractResultAudio;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out _hit, _raycastDistance))
+            if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out _hit, _raycastDistance, _layer))
             {
                 Debug.Log(_hit.transform.name);
                 if (_hit.transform.CompareTag(interactableTag))
@@ -24,7 +26,6 @@ public class ObjectInteraction : MonoBehaviour
                     InteractableItem wearable = null;
                     if (interactable.CanInteract == false)
                     {
-                        Debug.Log(interactable.CantInteractMessage);
                         InteractResult?.Invoke(interactable.CantInteractMessage);
                         return;
                     }
@@ -36,7 +37,6 @@ public class ObjectInteraction : MonoBehaviour
                         {
                             if (interactable.NeedItemMessage != "")
                             {
-                                Debug.Log(interactable.NeedItemMessage);
                                 InteractResult?.Invoke(interactable.NeedItemMessage);
                             }
                             
@@ -45,9 +45,8 @@ public class ObjectInteraction : MonoBehaviour
 
                         if (wearable.ItemType != interactable.RequiredItemType)
                         {
-                            if (interactable.CantInteractMessage != "")
+                            if (interactable.WrongItemMessage != "")
                             {
-                                Debug.Log(interactable.WrongItemMessage);
                                 InteractResult?.Invoke(interactable.WrongItemMessage);
                             }
 
@@ -59,21 +58,30 @@ public class ObjectInteraction : MonoBehaviour
                             return;
                         }
 
+                        InteractResultAudio?.Invoke(wearable.UseAudio);
+                        if (interactable.HintMessage != "")
+                        {
+                            InteractHint?.Invoke(interactable.HintMessage);
+                        }
+
                         wearable.UseAsync();
                         interactable.Interact();
 
                         if (interactable.InteractionSuccesfulMessage != "")
                         {
-                            Debug.Log(interactable.InteractionSuccesfulMessage);
                             InteractResult?.Invoke(interactable.InteractionSuccesfulMessage);
                             interactable.InteractionSuccesfulMessage = "";
                         }
                         return;
                     }
 
+                    if (interactable.HintMessage != "")
+                    {
+                        InteractHint?.Invoke(interactable.HintMessage);
+                    }
+
                     if (interactable.InteractionSuccesfulMessage != "")
                     {
-                        Debug.Log(interactable.InteractionSuccesfulMessage);
                         InteractResult?.Invoke(interactable.InteractionSuccesfulMessage);
                         interactable.InteractionSuccesfulMessage = "";
                     }

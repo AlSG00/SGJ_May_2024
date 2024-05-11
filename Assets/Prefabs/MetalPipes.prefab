@@ -162,12 +162,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CantInteractMessage: 
   NeedItemMessage: 
+  WrongItemMessage: 
   InteractionSuccesfulMessage: 
   CanInteract: 1
   ItemType: 5
   RequiresAnItem: 0
   RequiredItemType: 0
   _internalAudio: {fileID: 8300000, guid: 10ddb8bbcbba51e4e929928fb568b57b, type: 3}
+  _useAudio: {fileID: 8300000, guid: 7a7996691ada307489b8d9bda1490dc4, type: 3}
   colliderArray: []
   _inHandPositionOffset: {x: 0.5279999, y: -1.085999, z: 0.08899975}
   _inHandRotationOffset: {x: -78.596, y: 0, z: 0}
@@ -232,7 +234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8290782892783832528, guid: 4a9bda07cc10d85448fbf12513296905, type: 3}
+  - {fileID: 2100000, guid: 9bb867099605d944ab0d6f229bcc63b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
