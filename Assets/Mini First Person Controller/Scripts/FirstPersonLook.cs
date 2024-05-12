@@ -36,11 +36,6 @@ public class FirstPersonLook : MonoBehaviour
         FirstPersonMovement.Moving -= SetMovementShaking;
     }
 
-    //private void SetMovement(bool isMoving)
-    //{
-    //    _isMoving = isMoving;
-    //}
-
     void Reset()
     {
         _character = GetComponentInParent<FirstPersonMovement>().transform;
@@ -50,16 +45,9 @@ public class FirstPersonLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         _cmCameraPerlin = _cmCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        //_currentAmplitudeGain = _defaultAmplitudeGain;
-        //_currentrequencyGain = _defaultFrequencyGain;
     }
 
-    //private void Update()
-    //{
-    //    SetMovementShaking(_isMoving);
-    //}
-
-    void LateUpdate()
+    void Update()
     {
         Look();
     }
@@ -82,9 +70,6 @@ public class FirstPersonLook : MonoBehaviour
         float _targetFrequencyGain = 0;
         bool isIncreasing = false;
 
-
-
-
         if (movementType == FirstPersonMovement.Movement.Idle)
         {
             _targetAmplitudeGain = _idleAmplitudeGain;
@@ -105,8 +90,6 @@ public class FirstPersonLook : MonoBehaviour
         {
             isIncreasing = true;
         }
-
-
 
         if (isIncreasing)
         {
