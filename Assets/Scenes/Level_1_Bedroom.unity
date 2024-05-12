@@ -203,7 +203,7 @@ PrefabInstance:
     - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
         type: 3}
       propertyPath: HintMessage
-      value: "[E] \u041F\u0440\u0438\u0432\u044F\u0437\u0430\u0442\u044C"
+      value: '[E] tie to peg'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14cdf922f39b67d49bc439e255cdc812, type: 3}
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fa4d95b1cade345a6ce3b698466a33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HintMessage: "[F] \u0412\u043A\u043B/\u0432\u044B\u043A\u043B \u0444\u043E\u043D\u0430\u0440\u0438\u043A"
+  HintMessage: '[F] On/off flashlight'
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
@@ -651,11 +651,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintMessage: 
   CantInteractMessage: 
-  NeedItemMessage: "\u041D\u0443\u0436\u043D\u0430 \u0435\u0449\u0451 \u0432\u0435\u0440\u0451\u0432\u043A\u0430."
+  NeedItemMessage: Need another rope.
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u041F\u0435\u0440\u0435\u0434 \u0441\u043F\u0443\u0441\u043A\u043E\u043C
-    \u043D\u0443\u0436\u043D\u043E \u0437\u0430\u0445\u0432\u0430\u0442\u0438\u0442\u044C
-    \u0444\u043E\u043D\u0430\u0440\u0438\u043A \u0438\u0437 \u0433\u043E\u0441\u0442\u0438\u043D\u043E\u0439."
+  InteractionSuccesfulMessage: Need to pick the flashlight from the living room before
+    going down.
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1192,9 +1191,7 @@ PrefabInstance:
     - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
       propertyPath: _text.Array.data[0]
-      value: "[ESC] \u041D\u0430\u0436\u0430\u0442\u044C \u0434\u0432\u0430\u0436\u0434\u044B,
-        \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0439\u0442\u0438 \u0438\u0437
-        \u0438\u0433\u0440\u044B"
+      value: '[ESC] Press twice to quit the game'
       objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337777, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
@@ -2041,9 +2038,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u0414\u0430\u043B\u044C\u0448\u0435 \u043D\u0435
-    \u0434\u043E\u0442\u044F\u043D\u0443\u0442\u044C\u0441\u044F. \u041D\u0443\u0436\u043D\u0430
-    \u0432\u0435\u0440\u0451\u0432\u043A\u0430."
+  InteractionSuccesfulMessage: Can't dig that deep. Need a peg and a  rope.
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2183,11 +2178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text:
-  - "\u0412\u043E\u0442\u043A\u043D\u0443 \u0440\u044F\u0434\u043E\u043C \u043A\u043E\u043B\u044B\u0448\u0435\u043A
-    \u0438 \u043F\u0440\u0438\u0432\u044F\u0436\u0443 \u043A \u043D\u0435\u043C\u0443
-    \u0432\u0435\u0440\u0451\u0432\u043A\u0443."
-  - "\u0412\u0441\u0451 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0435
-    \u0434\u043E\u043B\u0436\u043D\u043E \u0431\u044B\u0442\u044C \u0432 \u043A\u043B\u0430\u0434\u043E\u0432\u043A\u0435."
+  - Gotta stick a peg next to the hole and tie a rope to it.
+  - Everything I need should be in the pantry.
 --- !u!65 &1140108324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4186,8 +4178,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u041D\u0443\u0436\u043D\u0430 \u0435\u0449\u0451
-    \u0432\u0435\u0440\u0451\u0432\u043A\u0430, \u0447\u0442\u043E\u0431\u044B \u0441\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u0441\u044F."
+  InteractionSuccesfulMessage: Need another rope to go down.
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -4491,12 +4482,12 @@ PrefabInstance:
     - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
         type: 3}
       propertyPath: HintMessage
-      value: "[E] \u041F\u0440\u0438\u0432\u044F\u0437\u0430\u0442\u044C"
+      value: '[E] tie to peg'
       objectReference: {fileID: 0}
     - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u041F\u0440\u0438\u0432\u044F\u0436\u0443 \u0435\u0451 \u043A \u043A\u043E\u043B\u044B\u0448\u043A\u0443."
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14cdf922f39b67d49bc439e255cdc812, type: 3}
@@ -4761,13 +4752,12 @@ PrefabInstance:
     - target: {fileID: 5269110231819318649, guid: eda638912edb88747bef6fe664aa54b6,
         type: 3}
       propertyPath: HintMessage
-      value: "[E] \u0412\u043E\u0442\u043A\u043D\u0443\u0442\u044C"
+      value: '[E] Stick'
       objectReference: {fileID: 0}
     - target: {fileID: 5269110231819318649, guid: eda638912edb88747bef6fe664aa54b6,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u0412\u043E\u0442\u043A\u043D\u0443 \u044D\u0442\u043E \u0440\u044F\u0434\u043E\u043C
-        \u0441 \u044F\u043C\u043E\u0439."
+      value: I'll stick this next to the hole.
       objectReference: {fileID: 0}
     - target: {fileID: 5269110231819318652, guid: eda638912edb88747bef6fe664aa54b6,
         type: 3}
@@ -4916,8 +4906,7 @@ PrefabInstance:
     - target: {fileID: 7083813523983637780, guid: d4bb01470547210488ace51ecb8d472f,
         type: 3}
       propertyPath: CantInteractMessage
-      value: "\u0414\u0432\u0435\u0440\u044C \u0437\u0430\u043F\u0435\u0440\u0442\u0430
-        \u043D\u0430 \u0437\u0430\u043C\u043E\u043A."
+      value: The door is padlocked.
       objectReference: {fileID: 0}
     - target: {fileID: 7083813523983637780, guid: d4bb01470547210488ace51ecb8d472f,
         type: 3}
@@ -5025,18 +5014,17 @@ PrefabInstance:
     - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
       propertyPath: NeedItemMessage
-      value: "\u041A\u043B\u044E\u0447, \u0432\u0440\u043E\u0434\u0435, \u0431\u044B\u043B
-        \u043D\u0430 \u043A\u0443\u0445\u043D\u0435."
+      value: The key was in the kitchen.
       objectReference: {fileID: 0}
     - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
       propertyPath: WrongItemMessage
-      value: "\u042D\u0442\u043E \u0442\u0430\u043A \u043D\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442..."
+      value: It's not works like that...
       objectReference: {fileID: 0}
     - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u0427\u0451\u0440\u0442, \u0441\u043B\u043E\u043C\u0430\u043B..."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
@@ -5210,7 +5198,7 @@ PrefabInstance:
     - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: NeedItemMessage
-      value: "\u041D\u0443\u0436\u0435\u043D \u043A\u043E\u043B\u044B\u0448\u0435\u043A."
+      value: Need a peg.
       objectReference: {fileID: 0}
     - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -5250,7 +5238,7 @@ PrefabInstance:
     - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u0422\u0435\u043F\u0435\u0440\u044C \u0432\u0435\u0440\u0451\u0432\u043A\u0443..."
+      value: Now the rope...
       objectReference: {fileID: 0}
     - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -5270,7 +5258,7 @@ PrefabInstance:
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: NeedItemMessage
-      value: "\u041D\u0443\u0436\u043D\u0430 \u0432\u0435\u0440\u0451\u0432\u043A\u0430"
+      value: Need a rope.
       objectReference: {fileID: 0}
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -5310,8 +5298,7 @@ PrefabInstance:
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u0413\u043E\u0442\u043E\u0432\u043E, \u043C\u043E\u0436\u043D\u043E
-        \u043A\u043E\u043F\u0430\u0442\u044C \u0434\u0430\u043B\u044C\u0448\u0435."
+      value: 'Alright, can keep digging. '
       objectReference: {fileID: 0}
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -5496,15 +5483,17 @@ PrefabInstance:
     - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
       propertyPath: _text.Array.data[0]
-      value: "\u042D\u0442\u043E\u0442 \u0441\u043A\u0440\u0435\u0436\u0435\u0442
-        \u043D\u0435\u0432\u044B\u043D\u043E\u0441\u0438\u043C..."
+      value: This scratching is unbearable...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _text.Array.data[1]
+      value: Need to keep digging to find the source.
       objectReference: {fileID: 0}
     - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
       propertyPath: _text.Array.data[2]
-      value: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u044F \u043E\u0441\u0442\u0430\u0432\u043B\u044F\u043B
-        \u043B\u043E\u043F\u0430\u0442\u0443 \u0443 \u0432\u0445\u043E\u0434\u043D\u043E\u0439
-        \u0434\u0432\u0435\u0440\u0438"
+      value: Think I left the shovel by the front door.
       objectReference: {fileID: 0}
     - target: {fileID: 7491004842923967596, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
@@ -5801,7 +5790,7 @@ PrefabInstance:
     - target: {fileID: 8663374151333833476, guid: 779d9df9c5c0ae04091f2ad09c7d1610,
         type: 3}
       propertyPath: HintMessage
-      value: "[E] \u041A\u043E\u043F\u0430\u0442\u044C"
+      value: '[E] Dig'
       objectReference: {fileID: 0}
     - target: {fileID: 8663374151333833476, guid: 779d9df9c5c0ae04091f2ad09c7d1610,
         type: 3}

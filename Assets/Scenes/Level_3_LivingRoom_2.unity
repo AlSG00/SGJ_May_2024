@@ -587,7 +587,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u0411\u043E\u043B\u044C\u0448\u0435 \u0432\u0435\u0440\u0451\u0432\u043E\u043A!"
+  InteractionSuccesfulMessage: More ropes!
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1088,8 +1088,7 @@ PrefabInstance:
     - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
       propertyPath: NeedItemMessage
-      value: "\u041D\u0443\u0436\u0435\u043D \u0447\u0451\u0440\u0442\u043E\u0432
-        \u043A\u043B\u044E\u0447."
+      value: Need a damn key.
       objectReference: {fileID: 0}
     - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
@@ -1429,7 +1428,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u0411\u041E\u041B\u042C\u0428\u0415 \u041F\u041E\u0414\u041F\u041E\u0420\u041E\u041A!"
+  InteractionSuccesfulMessage: MORE SUPPORTS!
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1874,7 +1873,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u0415\u0449\u0451 \u0432\u0435\u0440\u0451\u0432\u043A\u0443!"
+  InteractionSuccesfulMessage: Another rope!
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2568,7 +2567,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u041A\u041E\u041F\u0410\u0422\u042C!"
+  InteractionSuccesfulMessage: DIG!
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2872,8 +2871,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u041D\u0443\u0436\u043D\u044B \u0435\u0449\u0451
-    \u043F\u043E\u0434\u043F\u043E\u0440\u043A\u0438."
+  InteractionSuccesfulMessage: Need more supports.
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -3201,8 +3199,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u041D\u0443\u0436\u043D\u044B \u0435\u0449\u0451
-    \u0432\u0435\u0440\u0451\u0432\u043A\u0438."
+  InteractionSuccesfulMessage: Need more ropes.
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -3585,7 +3582,7 @@ MonoBehaviour:
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
-  InteractionSuccesfulMessage: "\u041D\u0443\u0436\u0435\u043D \u043A\u043E\u043B\u044B\u0448\u0435\u043A."
+  InteractionSuccesfulMessage: Need a peg.
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -4404,7 +4401,7 @@ PrefabInstance:
     - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u0422\u0435\u043F\u0435\u0440\u044C \u0432\u0435\u0440\u0451\u0432\u043A\u0430."
+      value: Now the rope.
       objectReference: {fileID: 0}
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -4454,7 +4451,7 @@ PrefabInstance:
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: InteractionSuccesfulMessage
-      value: "\u041D\u0443\u0436\u043D\u044B \u043F\u043E\u0434\u043F\u043E\u0440\u043A\u0438."
+      value: Need supports.
       objectReference: {fileID: 0}
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -4781,7 +4778,7 @@ PrefabInstance:
     - target: {fileID: 7083813523983637780, guid: d4bb01470547210488ace51ecb8d472f,
         type: 3}
       propertyPath: CantInteractMessage
-      value: "\u0417\u0430\u043F\u0435\u0440\u0442\u043E."
+      value: Padlocked...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4bb01470547210488ace51ecb8d472f, type: 3}
@@ -5516,7 +5513,7 @@ PrefabInstance:
     - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
       propertyPath: _text.Array.data[0]
-      value: "\u042F\u043C\u0430, \u043C\u043E\u044F \u044F\u043C\u0430..."
+      value: Holy hole...
       objectReference: {fileID: 0}
     - target: {fileID: 7491004842923967596, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
