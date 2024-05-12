@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 88003092480
-    m_Localized: A
+    m_Localized: '[W.A.S.D] Walk<br>[SHIFT] Run<br>[E] Interact<br>[G] Drop item'
     m_Metadata:
       m_Items: []
   - m_Id: 122853564416

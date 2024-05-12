@@ -4661,6 +4661,16 @@ PrefabInstance:
       propertyPath: _text.Array.data[0]
       value: '[W.A.S.D] Walk<br>[SHIFT] Run<br>[E] Interact<br>[G] Drop item'
       objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: test.m_TableEntryReference.m_KeyId
+      value: 88003092480
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: test.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337777, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
       propertyPath: _nextCollider

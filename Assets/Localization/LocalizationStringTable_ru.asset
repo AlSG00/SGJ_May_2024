@@ -19,7 +19,9 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 88003092480
-    m_Localized: AAA
+    m_Localized: "[W.A.S.D] \u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435<br>[SHIFT]
+      \u0411\u0435\u0433<br>[E] \u0412\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C<br>[G]
+      \u0412\u044B\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043F\u0440\u0435\u0434\u043C\u0435\u0442"
     m_Metadata:
       m_Items: []
   - m_Id: 122853564416

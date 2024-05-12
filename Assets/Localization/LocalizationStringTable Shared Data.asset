@@ -16,11 +16,11 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 7250446bf976869489110bffb581c59b
   m_Entries:
   - m_Id: 88003092480
-    m_Key: TestEntry
+    m_Key: Hint_1
     m_Metadata:
       m_Items: []
   - m_Id: 122853564416
-    m_Key: YoloEntry
+    m_Key: 
     m_Metadata:
       m_Items: []
   m_Metadata:
