@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHintTrigger : MonoBehaviour
 {
     [SerializeField] private string[] _text;
+    public string tetetest;
 
     public static event System.Action<string> ShowingHint;
 

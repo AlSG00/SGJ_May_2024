@@ -1097,6 +1097,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1954742262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &486432513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3936104301370337778, guid: 2e255d62d260bbc4cba3988d25b53513,
+    type: 3}
+  m_PrefabInstance: {fileID: 3936104299501896134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &498855975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3431,6 +3437,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3936104299501896134}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889675321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486432513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c657a3e56cb2194c9e818f99829937e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 122853564416
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1898972881
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Table Shared Data
+  m_Name: LocalizationStringTable Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Table
-  m_TableCollectionNameGuidString: e91264e3bc47d5445b35198fe0d1878a
+  m_TableCollectionName: LocalizationStringTable
+  m_TableCollectionNameGuidString: 7250446bf976869489110bffb581c59b
   m_Entries:
-  - m_Id: 782135238656
-    m_Key: Test
+  - m_Id: 88003092480
+    m_Key: TestEntry
     m_Metadata:
       m_Items: []
-  - m_Id: 160611583696896
-    m_Key: New Entry
+  - m_Id: 122853564416
+    m_Key: YoloEntry
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 5877751944915976217
+    rid: 5877751955259129860
   references:
     version: 2
     RefIds:
-    - rid: 5877751944915976217
+    - rid: 5877751955259129860
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1715494691402
+        m_CustomEpoch: 1715533082137

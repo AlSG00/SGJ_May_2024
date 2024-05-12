@@ -5764,7 +5764,7 @@ PrefabInstance:
     - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
       propertyPath: _text.Array.data[0]
-      value: Keep...
+      value: Dig...
       objectReference: {fileID: 0}
     - target: {fileID: 7491004842923967596, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
