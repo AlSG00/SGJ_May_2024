@@ -43,7 +43,7 @@ public class FirstPersonLook : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         _cmCameraPerlin = _cmCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 

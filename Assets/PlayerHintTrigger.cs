@@ -7,7 +7,7 @@ using UnityEngine.Localization.Settings;
 public class PlayerHintTrigger : MonoBehaviour
 {
     [SerializeField] private string[] _text;
-    [SerializeField] private LocalizedString test;
+    [SerializeField] private LocalizedString[] _localizedString;
 
     public static event System.Action<string> ShowingHint;
 
@@ -17,10 +17,10 @@ public class PlayerHintTrigger : MonoBehaviour
         {
             return;
         }
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
-        foreach (var text in _text)
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+        foreach (var text in _localizedString)
         {
-            ShowingHint?.Invoke(test.GetLocalizedString());
+            ShowingHint?.Invoke(text.GetLocalizedString());
         }
 
         gameObject.GetComponent<Collider>().enabled = false;

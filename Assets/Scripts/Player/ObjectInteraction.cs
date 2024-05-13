@@ -19,14 +19,18 @@ public class ObjectInteraction : MonoBehaviour
         {
             if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out _hit, _raycastDistance, _layer))
             {
-                Debug.Log(_hit.transform.name);
+                //Debug.Log(_hit.transform.name);
                 if (_hit.transform.CompareTag(interactableTag))
                 {
                     InteractableItem interactable = _hit.transform.gameObject.GetComponent<InteractableItem>();
                     InteractableItem wearable = null;
                     if (interactable.CanInteract == false)
                     {
-                        InteractResult?.Invoke(interactable.CantInteractMessage);
+                        if (interactable.CantInteractLocalizedMessage.IsEmpty == false)
+                        {
+                            InteractResult?.Invoke(interactable.CantInteractLocalizedMessage.GetLocalizedString());
+                        }
+
                         return;
                     }
 
@@ -35,9 +39,9 @@ public class ObjectInteraction : MonoBehaviour
                         wearable = _wearableItem.GetCurrentItem();
                         if (wearable == null)
                         {
-                            if (interactable.NeedItemMessage != "")
+                            if (interactable.NeedItemLocalizedMessage.IsEmpty == false)
                             {
-                                InteractResult?.Invoke(interactable.NeedItemMessage);
+                                InteractResult?.Invoke(interactable.NeedItemLocalizedMessage.GetLocalizedString());
                             }
                             
                             return;
@@ -45,9 +49,9 @@ public class ObjectInteraction : MonoBehaviour
 
                         if (wearable.ItemType != interactable.RequiredItemType)
                         {
-                            if (interactable.WrongItemMessage != "")
+                            if (interactable.WrongItemLocalizedMessage.IsEmpty == false)
                             {
-                                InteractResult?.Invoke(interactable.WrongItemMessage);
+                                InteractResult?.Invoke(interactable.WrongItemLocalizedMessage.GetLocalizedString());
                             }
 
                             return;
@@ -59,32 +63,33 @@ public class ObjectInteraction : MonoBehaviour
                         }
 
                         InteractResultAudio?.Invoke(wearable.UseAudio);
-                        if (interactable.HintMessage != "")
+                        if (interactable.HintLocalizedMessage.IsEmpty == false)
                         {
-                            InteractHint?.Invoke(interactable.HintMessage);
+                            InteractHint?.Invoke(interactable.HintLocalizedMessage.GetLocalizedString());
                         }
 
                         wearable.UseAsync();
                         interactable.Interact();
 
-                        if (interactable.InteractionSuccesfulMessage != "")
+                        if (interactable.InteractionSuccesfulLocalizedMessage.IsEmpty == false)
                         {
-                            InteractResult?.Invoke(interactable.InteractionSuccesfulMessage);
+                            InteractResult?.Invoke(interactable.InteractionSuccesfulLocalizedMessage.GetLocalizedString());
                             interactable.InteractionSuccesfulMessage = "";
                         }
                         return;
                     }
 
-                    if (interactable.HintMessage != "")
+                    if (interactable.HintLocalizedMessage.IsEmpty == false)
                     {
-                        InteractHint?.Invoke(interactable.HintMessage);
+                        InteractHint?.Invoke(interactable.HintLocalizedMessage.GetLocalizedString());
                     }
 
-                    if (interactable.InteractionSuccesfulMessage != "")
+                    if (interactable.InteractionSuccesfulLocalizedMessage.IsEmpty == false)
                     {
-                        InteractResult?.Invoke(interactable.InteractionSuccesfulMessage);
-                        interactable.InteractionSuccesfulMessage = "";
+                        InteractResult?.Invoke(interactable.InteractionSuccesfulLocalizedMessage.GetLocalizedString());
+                        //interactable.InteractionSuccesfulMessage = "";
                     }
+
                     interactable.Interact();
                     InteractResultAudio?.Invoke(interactable.InteractAudio);
                 }

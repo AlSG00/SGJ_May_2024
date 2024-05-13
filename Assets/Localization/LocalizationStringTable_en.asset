@@ -23,7 +23,227 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 122853564416
-    m_Localized: ENGLISH
+    m_Localized: This scratching is unbearable...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342629449768960
+    m_Localized: Need to keep digging to find the source.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342632981372928
+    m_Localized: Think I left the shovel by the front door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 345786380754944
+    m_Localized: '[ESC] Press twice to quit the game'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346524402098176
+    m_Localized: '[E] Dig'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346709379293184
+    m_Localized: The door is padlocked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346891621801984
+    m_Localized: The key was in the kitchen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347090364702720
+    m_Localized: It's not works like that...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347683573506048
+    m_Localized: '[E] Tie to peg'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348322462474240
+    m_Localized: '[E] Stick'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348579812384768
+    m_Localized: '[F] On/off flashlight'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349286133178368
+    m_Localized: Need a peg.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349540131840000
+    m_Localized: Now the rope...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349913642999808
+    m_Localized: Can't dig that deep. Need a peg and a  rope.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350294464831488
+    m_Localized: Gotta stick a peg next to the hole and tie a rope to it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350311518871552
+    m_Localized: Everything I need should be in the pantry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351098290610176
+    m_Localized: I'll stick this next to the hole.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352197877735424
+    m_Localized: Need a rope.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352662015221760
+    m_Localized: Alright, can keep digging.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352966056124416
+    m_Localized: Need another rope to go down.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353214614773760
+    m_Localized: Need another rope.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353739355758592
+    m_Localized: Need to pick the flashlight from the living room before going down.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355025149009920
+    m_Localized: Need to keep digging...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355620962476032
+    m_Localized: Need a peg.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356039990222848
+    m_Localized: Need to find a rope.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356442085564416
+    m_Localized: Now can keep digging.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356819883302912
+    m_Localized: Need another rope.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357618298429440
+    m_Localized: Must. Dig. A hole.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358022411231232
+    m_Localized: Padlocked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358473240190976
+    m_Localized: Need a key.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 359033708257280
+    m_Localized: Supports.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 359844525940736
+    m_Localized: '[E] Put in the hole'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360413990789120
+    m_Localized: Need to find a peg.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360574682963968
+    m_Localized: Now the rope.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362225422606336
+    m_Localized: Looks unstable. I should look for supports.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362780769427456
+    m_Localized: Now can continue digging.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 363320484077568
+    m_Localized: Gotta place more supports.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 363530299940864
+    m_Localized: Need another rope to go down.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 363718041182208
+    m_Localized: Can go down now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364416459907072
+    m_Localized: Holy hole...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365413869592576
+    m_Localized: Need supports.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365692585287680
+    m_Localized: Need more ropes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366243473563648
+    m_Localized: Need more supports.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366714728783872
+    m_Localized: More ropes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367143957078016
+    m_Localized: MORE SUPPORTS!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367543871381504
+    m_Localized: DIG!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368059368120320
+    m_Localized: Another rope!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369685969543168
+    m_Localized: Must...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369831155376128
+    m_Localized: Dig...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369934771462144
+    m_Localized: A hole...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370620598886400
+    m_Localized: Peg...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370749728923648
+    m_Localized: Rope...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370885230108672
+    m_Localized: Supports...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371014334980096
+    m_Localized: Dig...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371556339720192
+    m_Localized: Down...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372513165320192
+    m_Localized: SO THAT'S WHO WAS SCRATCHING...
     m_Metadata:
       m_Items: []
   references:

@@ -20,7 +20,227 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 122853564416
-    m_Key: 
+    m_Key: L1_Monologue_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342629449768960
+    m_Key: L1_Monologue_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 342632981372928
+    m_Key: L1_Monologue_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 345786380754944
+    m_Key: Hint_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346524402098176
+    m_Key: Hint_Shovel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346709379293184
+    m_Key: L1_Door_CantInteract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346891621801984
+    m_Key: L1_Lock_NeedItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347090364702720
+    m_Key: L1_LockWrongItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347683573506048
+    m_Key: L1_Hint_Rope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348322462474240
+    m_Key: L1_Hint_Peg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348579812384768
+    m_Key: L1_Hint_Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349286133178368
+    m_Key: PitonTrigger_NeedItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349540131840000
+    m_Key: L1_PitonTrigger_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349913642999808
+    m_Key: L1_Dirt_3_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350294464831488
+    m_Key: L1_Monologue_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350311518871552
+    m_Key: L1_Monologue_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351098290610176
+    m_Key: L1_Peg_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352197877735424
+    m_Key: StickedPiton_NeedItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352662015221760
+    m_Key: L1_TieRope_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352966056124416
+    m_Key: L1_Dirt_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353214614773760
+    m_Key: StickedPeg_NeedItem_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353739355758592
+    m_Key: L1_TieRope_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355025149009920
+    m_Key: L2_Monologue_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355620962476032
+    m_Key: L2_Dirt_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356039990222848
+    m_Key: L2_PitonTrigger_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356442085564416
+    m_Key: L2_TieRope_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356819883302912
+    m_Key: L2_Dirt_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357618298429440
+    m_Key: L3_LR_1_Monologue_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358022411231232
+    m_Key: L3_LR1_Door_CantInteract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 358473240190976
+    m_Key: L3_LR_1_Lock_NeedItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 359033708257280
+    m_Key: L3_LR_1_Monologue_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 359844525940736
+    m_Key: L2_LR_1_Supports_Hint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360413990789120
+    m_Key: L2_LR_1_Dirt_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 360574682963968
+    m_Key: L1_LR_1_PitonTriggerSuccess
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362225422606336
+    m_Key: L2_LR1_Peg_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362780769427456
+    m_Key: L2_LR1_Supports_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 363320484077568
+    m_Key: L2_LR1_AddRope_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 363530299940864
+    m_Key: L2_LR1_Dirt_Success_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 363718041182208
+    m_Key: L3_LR1_TieRope_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364416459907072
+    m_Key: L3_LR2_Monologue_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365413869592576
+    m_Key: L3_LR2_Peg_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365692585287680
+    m_Key: L3_LR2_Dirt_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366243473563648
+    m_Key: LR3_LR2_TieRope_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366714728783872
+    m_Key: L3_LR2_Dirt_Success_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367143957078016
+    m_Key: L3_LR2_TieRope_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367543871381504
+    m_Key: L3_LR2_SetSupports_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368059368120320
+    m_Key: L3_LR2_Dirt_Success_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369685969543168
+    m_Key: L4_Monologue_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369831155376128
+    m_Key: L4_Monologue_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369934771462144
+    m_Key: L4_Monologue_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370620598886400
+    m_Key: L4_Dirt_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370749728923648
+    m_Key: L4_Peg_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370885230108672
+    m_Key: L4_TieRope_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371014334980096
+    m_Key: L4_SetSupports_Success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371556339720192
+    m_Key: L4_Dirt_Success_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372513165320192
+    m_Key: SampleScene/Canvas/Image/Text (TMP)
     m_Metadata:
       m_Items: []
   m_Metadata:

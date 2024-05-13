@@ -205,6 +205,16 @@ PrefabInstance:
       propertyPath: HintMessage
       value: '[E] tie to peg'
       objectReference: {fileID: 0}
+    - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 347683573506048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14cdf922f39b67d49bc439e255cdc812, type: 3}
 --- !u!4 &11170614 stripped
@@ -332,12 +342,60 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 348579812384768
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 0
   RequiredItemType: 0
   _internalAudio: {fileID: 0}
   _useAudio: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &50939084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -655,6 +713,51 @@ MonoBehaviour:
   WrongItemMessage: 
   InteractionSuccesfulMessage: Need to pick the flashlight from the living room before
     going down.
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 353214614773760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 353739355758592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -671,6 +774,9 @@ MonoBehaviour:
   _nextTrigger: []
   _itemsToDisable:
   - {fileID: 68186109}
+  references:
+    version: 2
+    RefIds: []
 --- !u!136 &149400207
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -761,6 +867,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -773,6 +924,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 660752319}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &269557267
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1097,12 +1251,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1954742262}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &486432513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3936104301370337778, guid: 2e255d62d260bbc4cba3988d25b53513,
-    type: 3}
-  m_PrefabInstance: {fileID: 3936104299501896134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &498855975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1198,6 +1346,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _text.Array.data[0]
       value: '[ESC] Press twice to quit the game'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: _localizedString.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 345786380754944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
       objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337777, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
@@ -1468,6 +1631,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1480,6 +1688,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 1040098590}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &660752321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2045,6 +2256,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: Can't dig that deep. Need a peg and a  rope.
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 349913642999808
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2058,6 +2314,9 @@ MonoBehaviour:
   _nextTrigger:
   - {fileID: 6956464697367567549}
   - {fileID: 1140108324}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &1040098592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2186,6 +2445,26 @@ MonoBehaviour:
   _text:
   - Gotta stick a peg next to the hole and tie a rope to it.
   - Everything I need should be in the pantry.
+  _localizedString:
+  - m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 350294464831488
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 350311518871552
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!65 &1140108324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2918,6 +3197,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2930,6 +3254,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 2097278794}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &1739272781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3437,30 +3764,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3936104299501896134}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1889675321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486432513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c657a3e56cb2194c9e818f99829937e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  test:
-    m_TableReference:
-      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
-    m_TableEntryReference:
-      m_KeyId: 122853564416
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!1 &1898972881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,6 +4512,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: Need another rope to go down.
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 352966056124416
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -4221,6 +4569,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 149400207}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &2097278796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4519,6 +4870,16 @@ PrefabInstance:
       propertyPath: InteractionSuccesfulMessage
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 347683573506048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659673815633059532, guid: 14cdf922f39b67d49bc439e255cdc812,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14cdf922f39b67d49bc439e255cdc812, type: 3}
 --- !u!4 &543450651924034179 stripped
@@ -4663,12 +5024,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
+      propertyPath: _localizedString.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
       propertyPath: test.m_TableEntryReference.m_KeyId
       value: 88003092480
       objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
       propertyPath: test.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 88003092480
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936104301370337776, guid: 2e255d62d260bbc4cba3988d25b53513,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableReference.m_TableCollectionName
       value: GUID:7250446bf976869489110bffb581c59b
       objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337777, guid: 2e255d62d260bbc4cba3988d25b53513,
@@ -4798,6 +5174,26 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionSuccesfulMessage
       value: I'll stick this next to the hole.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269110231819318649, guid: eda638912edb88747bef6fe664aa54b6,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 348322462474240
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269110231819318649, guid: eda638912edb88747bef6fe664aa54b6,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269110231819318649, guid: eda638912edb88747bef6fe664aa54b6,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 351098290610176
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269110231819318649, guid: eda638912edb88747bef6fe664aa54b6,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
       objectReference: {fileID: 0}
     - target: {fileID: 5269110231819318652, guid: eda638912edb88747bef6fe664aa54b6,
         type: 3}
@@ -4953,6 +5349,16 @@ PrefabInstance:
       propertyPath: InteractionSuccesfulMessage
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7083813523983637780, guid: d4bb01470547210488ace51ecb8d472f,
+        type: 3}
+      propertyPath: CantInteractLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 346709379293184
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083813523983637780, guid: d4bb01470547210488ace51ecb8d472f,
+        type: 3}
+      propertyPath: CantInteractLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4bb01470547210488ace51ecb8d472f, type: 3}
 --- !u!1001 &6100836812812265265
@@ -5076,6 +5482,26 @@ PrefabInstance:
       propertyPath: _connectedInteractables.Array.data[0]
       value: 
       objectReference: {fileID: 3469287838094504547}
+    - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 346891621801984
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
+        type: 3}
+      propertyPath: WrongItemLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 347090364702720
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139810563327032984, guid: 210bff4fdcae4a144956e5dafc741fe9,
+        type: 3}
+      propertyPath: WrongItemLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 8313257049377965557, guid: 210bff4fdcae4a144956e5dafc741fe9,
         type: 3}
       propertyPath: m_RootOrder
@@ -5157,6 +5583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
+      propertyPath: m_Size.z
+      value: 0.26884437
+      objectReference: {fileID: 0}
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -5173,7 +5604,7 @@ PrefabInstance:
     - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: m_Center.z
-      value: -1.2531268e-15
+      value: -0.36557627
       objectReference: {fileID: 0}
     - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
@@ -5285,6 +5716,26 @@ PrefabInstance:
       propertyPath: _colliderArray.Array.data[0]
       value: 
       objectReference: {fileID: 6956464697367567549}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 349286133178368
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 349540131840000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: _collider
@@ -5345,6 +5796,26 @@ PrefabInstance:
       propertyPath: _colliderArray.Array.data[0]
       value: 
       objectReference: {fileID: 3469287837922098471}
+    - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 352197877735424
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 352662015221760
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 4554113588439206756, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: m_IsTrigger
@@ -5534,6 +6005,41 @@ PrefabInstance:
         type: 3}
       propertyPath: _text.Array.data[2]
       value: Think I left the shovel by the front door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 122853564416
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[1].m_TableEntryReference.m_KeyId
+      value: 342629449768960
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[2].m_TableEntryReference.m_KeyId
+      value: 342632981372928
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[1].m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[2].m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
       objectReference: {fileID: 0}
     - target: {fileID: 7491004842923967596, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
@@ -5836,6 +6342,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _remainingUses
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663374151333833476, guid: 779d9df9c5c0ae04091f2ad09c7d1610,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 346524402098176
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663374151333833476, guid: 779d9df9c5c0ae04091f2ad09c7d1610,
+        type: 3}
+      propertyPath: HintLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
       objectReference: {fileID: 0}
     - target: {fileID: 8663374151333833477, guid: 779d9df9c5c0ae04091f2ad09c7d1610,
         type: 3}

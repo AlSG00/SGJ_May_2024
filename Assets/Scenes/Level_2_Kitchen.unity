@@ -451,7 +451,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 869474349}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &128764456
 BoxCollider:
@@ -757,6 +757,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -769,6 +814,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 866163948}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &264209331
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -884,6 +932,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -896,6 +989,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 916155918}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &310996791
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1396,6 +1492,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1412,6 +1553,9 @@ MonoBehaviour:
   _nextTrigger:
   - {fileID: 264209329}
   _itemsToDisable: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!4 &561704485
 Transform:
   m_ObjectHideFlags: 0
@@ -1477,6 +1621,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: Need another rope.
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 356819883302912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 356819883302912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1489,6 +1678,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 1106416808}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &671875327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1552,7 +1744,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 869474349}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -27.807}
 --- !u!1001 &727283260
 PrefabInstance:
@@ -1847,6 +2039,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -1859,6 +2096,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 671875325}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &737394694
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2070,6 +2310,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2082,6 +2367,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 737394692}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &866163950
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2187,8 +2475,8 @@ Transform:
   - {fileID: 264209333}
   - {fileID: 866163952}
   - {fileID: 737394696}
-  - {fileID: 128764455}
   - {fileID: 671875329}
+  - {fileID: 128764455}
   - {fileID: 2025757362}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2249,6 +2537,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: Need a peg.
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 355620962476032
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2261,6 +2594,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 1126518897}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &916155920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2780,6 +3116,21 @@ PrefabInstance:
       propertyPath: _text.Array.data[0]
       value: Need to keep digging...
       objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableEntryReference.m_KeyId
+      value: 355025149009920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491004842923967593, guid: 3625e278817e49c47b7507cb28cb7e4e,
+        type: 3}
+      propertyPath: _localizedString.Array.data[0].m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 7491004842923967596, guid: 3625e278817e49c47b7507cb28cb7e4e,
         type: 3}
       propertyPath: m_Name
@@ -2906,6 +3257,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -2922,6 +3318,9 @@ MonoBehaviour:
   _nextTrigger: []
   _itemsToDisable:
   - {fileID: 128764454}
+  references:
+    version: 2
+    RefIds: []
 --- !u!4 &1106416810
 Transform:
   m_ObjectHideFlags: 0
@@ -2944,6 +3343,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 869474349}
     m_Modifications:
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1465442
+      objectReference: {fileID: 0}
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.164974
+      objectReference: {fileID: 0}
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.28532362
+      objectReference: {fileID: 0}
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.031249262
+      objectReference: {fileID: 0}
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.004263019
+      objectReference: {fileID: 0}
+    - target: {fileID: 134980098957696296, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.35733792
+      objectReference: {fileID: 0}
     - target: {fileID: 1674489236486229741, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: m_RootOrder
@@ -3049,6 +3478,26 @@ PrefabInstance:
       propertyPath: _colliderArray.Array.data[0]
       value: 
       objectReference: {fileID: 1126518897}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 356039990222848
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: NeedItemLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 356039990222848
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488933918648014828, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: RequiresAnItem
@@ -3099,6 +3548,16 @@ PrefabInstance:
       propertyPath: _colliderArray.Array.data[0]
       value: 
       objectReference: {fileID: 1126518892}
+    - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableEntryReference.m_KeyId
+      value: 356442085564416
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117432768142916650, guid: d70612f6d4ed28d418548cf3b1feef69,
+        type: 3}
+      propertyPath: InteractionSuccesfulLocalizedMessage.m_TableReference.m_TableCollectionName
+      value: GUID:7250446bf976869489110bffb581c59b
+      objectReference: {fileID: 0}
     - target: {fileID: 4554113588439206756, guid: d70612f6d4ed28d418548cf3b1feef69,
         type: 3}
       propertyPath: m_IsTrigger
@@ -3402,6 +3861,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -3414,6 +3918,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 1924811392}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &1170921226
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3555,6 +4062,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: Need another rope.
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7250446bf976869489110bffb581c59b
+    m_TableEntryReference:
+      m_KeyId: 356819883302912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -3567,6 +4119,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 561704483}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &1207724382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4277,6 +4832,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -4289,6 +4889,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 310996789}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &1807496845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4585,6 +5188,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 1
@@ -4597,6 +5245,9 @@ MonoBehaviour:
   _remainingDigs: 1
   _nextTrigger:
   - {fileID: 1207724380}
+  references:
+    version: 2
+    RefIds: []
 --- !u!23 &1924811394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5228,6 +5879,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 379102308}
     m_Modifications:
+    - target: {fileID: 2259771218778359510, guid: 8bb56ebe84f3be445a26cf50a4c9f52c,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259771218778359510, guid: 8bb56ebe84f3be445a26cf50a4c9f52c,
+        type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3611856156500718169, guid: 8bb56ebe84f3be445a26cf50a4c9f52c,
         type: 3}
       propertyPath: m_RootOrder

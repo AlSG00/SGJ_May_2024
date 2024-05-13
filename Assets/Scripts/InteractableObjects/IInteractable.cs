@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Localization;
 
 public abstract class InteractableItem : MonoBehaviour
 {
@@ -7,6 +8,13 @@ public abstract class InteractableItem : MonoBehaviour
     public string NeedItemMessage;
     public string WrongItemMessage;
     public string InteractionSuccesfulMessage;
+
+    public LocalizedString HintLocalizedMessage;
+    public LocalizedString CantInteractLocalizedMessage;
+    public LocalizedString NeedItemLocalizedMessage;
+    public LocalizedString WrongItemLocalizedMessage;
+    public LocalizedString InteractionSuccesfulLocalizedMessage;
+
     public bool CanInteract = true;
     public Item ItemType;
     public bool RequiresAnItem;
