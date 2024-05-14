@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    [SerializeField] private FirstPersonMovement _movement;
     [SerializeField] private FirstPersonLook _look;
     [SerializeField] private GameObject[] _uiElements;
     [SerializeField] private int _showElementDelay;
@@ -30,16 +29,13 @@ public class PauseMenu : MonoBehaviour
             {
                 Show();
             }
-
-            _isVisible = !_isVisible;
         }
     }
 
     public void Show()
     {
         Time.timeScale = 0;
-
-        //_movement.enabled = false;
+        _isVisible = true;
         _look.Enabled = false;
         Cursor.lockState = CursorLockMode.None;
         foreach (var element in _uiElements)
@@ -51,8 +47,7 @@ public class PauseMenu : MonoBehaviour
     public void Hide()
     {
         Time.timeScale = 1;
-
-        //_movement.enabled = true;
+        _isVisible = false;
         _look.Enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         foreach (var element in _uiElements)
