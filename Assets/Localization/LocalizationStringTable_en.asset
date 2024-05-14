@@ -246,6 +246,22 @@ MonoBehaviour:
     m_Localized: SO THAT'S WHO WAS SCRATCHING...
     m_Metadata:
       m_Items: []
+  - m_Id: 713795557433344
+    m_Localized: START
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714215600201728
+    m_Localized: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714240409509888
+    m_Localized: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 759006115438592
+    m_Localized: CONTINUE
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

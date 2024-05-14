@@ -3013,6 +3013,11 @@ PrefabInstance:
       propertyPath: _isEnabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2902778120649663209, guid: 55faa189766be304d9ec2ee4b46c849c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2902778120649663211, guid: 55faa189766be304d9ec2ee4b46c849c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5075,7 +5080,7 @@ PrefabInstance:
     - target: {fileID: 3936104301370337779, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.207
+      value: 0.905
       objectReference: {fileID: 0}
     - target: {fileID: 3936104301370337779, guid: 2e255d62d260bbc4cba3988d25b53513,
         type: 3}

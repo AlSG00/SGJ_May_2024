@@ -17,7 +17,7 @@ public class PlayerHintTrigger : MonoBehaviour
         {
             return;
         }
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+
         foreach (var text in _localizedString)
         {
             ShowingHint?.Invoke(text.GetLocalizedString());

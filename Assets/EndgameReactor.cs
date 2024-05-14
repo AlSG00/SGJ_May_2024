@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndgameReactor : MonoBehaviour
 {
@@ -41,15 +42,22 @@ public class EndgameReactor : MonoBehaviour
 
         await System.Threading.Tasks.Task.Delay(4000);
 
-        foreach (var obj in _objectsToActivate)
+        foreach (var obj in _objectsToDeactivate)
         {
             obj.SetActive(false);
         }
 
-        await System.Threading.Tasks.Task.Delay(500);
+        await System.Threading.Tasks.Task.Delay(2000);
 
-        Application.Quit();
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        //SceneManager.sceneLoaded += LoadMainMenu;
     }
+
+    //private void LoadMainMenu(Scene arg0, LoadSceneMode arg1)
+    //{
+    //    Cursor.lockState = CursorLockMode.None;
+    //    SceneManager.UnloadScene(8);
+    //}
 }
 
 

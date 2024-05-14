@@ -243,6 +243,22 @@ MonoBehaviour:
     m_Key: SampleScene/Canvas/Image/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 713795557433344
+    m_Key: MainMenu/MainMenuUI/Button_Start/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714215600201728
+    m_Key: MainMenu/MainMenuUI/Button_Settings/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714240409509888
+    m_Key: MainMenu/MainMenuUI/Button_Exit/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 759006115438592
+    m_Key: SampleScene/Canvas/PauseMenu/Button_Continue/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

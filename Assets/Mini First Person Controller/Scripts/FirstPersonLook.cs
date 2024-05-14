@@ -1,5 +1,6 @@
 ﻿using Cinemachine;
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class FirstPersonLook : MonoBehaviour
@@ -26,6 +27,8 @@ public class FirstPersonLook : MonoBehaviour
     private bool _isChangingGain = false;
     [SerializeField] private bool _isMoving;
 
+    internal bool Enabled = false;
+
     private void OnEnable()
     {
         FirstPersonMovement.Moving += SetMovementShaking;
@@ -44,25 +47,43 @@ public class FirstPersonLook : MonoBehaviour
     void Start()
     {
         //Cursor.lockState = CursorLockMode.Locked;
+        _character.localRotation = Quaternion.AngleAxis(-198, Vector3.up);
         _cmCameraPerlin = _cmCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+
+        PlayerSpawn();
+    }
+
+    private async void PlayerSpawn()
+    {
+        await Task.Delay(2000);
+        Enabled = true;
     }
 
     void Update()
     {
+        if (Enabled == false)
+        {
+            //_frameVelocity = mouseDelta;
+            return;
+        }
+
         Look();
     }
 
+    //private Vector2 mouseDelta;
     private void Look()
     {
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * _sensitivity);
-        _frameVelocity = Vector2.Lerp(_frameVelocity, rawFrameVelocity, 1 / _smoothing);
+        _frameVelocity = Vector2.Lerp(_frameVelocity, rawFrameVelocity, (1 / _smoothing) * Time.deltaTime);
         _velocity += _frameVelocity;
         _velocity.y = Mathf.Clamp(_velocity.y, -90, 90);
 
         transform.localRotation = Quaternion.AngleAxis(-_velocity.y, Vector3.right);
-        _character.localRotation = Quaternion.AngleAxis(_velocity.x, Vector3.up);
+        _character.localRotation = Quaternion.AngleAxis(/*_character.localRotation.x + */_velocity.x, Vector3.up);
     }
+
+    #region CAMERA SHAKING
 
     public void SetMovementShaking(FirstPersonMovement.Movement movementType)
     {
@@ -155,4 +176,6 @@ public class FirstPersonLook : MonoBehaviour
         _cmCameraPerlin.m_FrequencyGain = targetFrequencyGain;
         _isChangingGain = false;
     }
+
+    #endregion
 }
