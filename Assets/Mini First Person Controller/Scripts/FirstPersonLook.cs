@@ -59,7 +59,7 @@ public class FirstPersonLook : MonoBehaviour
         Enabled = true;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (Enabled == false)
         {

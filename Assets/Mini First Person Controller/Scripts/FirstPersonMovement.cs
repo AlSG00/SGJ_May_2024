@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
@@ -14,6 +15,7 @@ public class FirstPersonMovement : MonoBehaviour
 
     [SerializeField] private FirstPersonLook _cameraLook;
     [SerializeField] private FootstepAudioController _footstepAudio;
+    [SerializeField] private LayerMask _layer;
 
     public float speed = 5;
 
@@ -44,8 +46,17 @@ public class FirstPersonMovement : MonoBehaviour
 
     void Update()
     {
-        //Move();
+        CheckGround();
         CheckMovementState();
+    }
+
+    RaycastHit hit;
+    private void CheckGround()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.955f, _layer) == false)
+        {
+            _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _rigidbody.velocity.y - 0.5f, _rigidbody.velocity.z);
+        }
     }
 
     private void FixedUpdate()
@@ -53,6 +64,8 @@ public class FirstPersonMovement : MonoBehaviour
         Move();
 
         Vector2 targetVelocity = new Vector2(_horizontalInput * _targetMovingSpeed, _verticalInput * _targetMovingSpeed);
+
+        //_rigidbody.AddForce(transform.rotation * new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y), ForceMode.VelocityChange);
 
         _rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y);
         _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, _targetMovingSpeed);

@@ -1,21 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractWithWearableItem : MonoBehaviour
 {
-    public Transform CurrentItem {
-    get
+    public Transform CurrentItem
+    {
+        get
         {
             return _currentItem;
         }
     }
 
+    [SerializeField] private Transform _playerBody;
     [SerializeField] private Transform _handPivot;
     [SerializeField] private Transform _currentItem = null;
-    [SerializeField]  private Vector3 _currentPositionOffset;
-    [SerializeField]  private Quaternion _currentRotationOffset;
+    //[SerializeField] private Vector3 _currentPositionOffset;
+    //[SerializeField] private Quaternion _currentRotationOffset;
+    [SerializeField] private Vector3 _currentDropPositionOffset;
+    [SerializeField] private Vector3 _currentDropRotationOffset;
+
 
     private void OnEnable()
     {
@@ -55,7 +57,7 @@ public class InteractWithWearableItem : MonoBehaviour
         }
     }
 
-    private void GetItem(Transform item, Vector3 itemPositionOffset, Quaternion itemRotationOffset)
+    private void GetItem(Transform item, Vector3 itemPositionOffset, Vector3 itemRotationOffset, Vector3 itemDropPositionOffset, Vector3 itemDropRotatioOffset)
     {
         if (_currentItem != null)
         {
@@ -65,10 +67,10 @@ public class InteractWithWearableItem : MonoBehaviour
 
         item.parent = _handPivot;
         item.localPosition = _handPivot.localPosition + itemPositionOffset;
-        item.localRotation = _handPivot.localRotation * itemRotationOffset;
+        item.localRotation = _handPivot.localRotation * Quaternion.Euler(itemRotationOffset);
+        _currentDropPositionOffset = itemDropPositionOffset;
+        _currentDropRotationOffset = itemDropRotatioOffset;
         _currentItem = item;
-        item.GetComponent<Rigidbody>().isKinematic = true;
-
     }
 
     private void DropItem()
@@ -77,8 +79,11 @@ public class InteractWithWearableItem : MonoBehaviour
         {
             return;
         }
+        _currentItem.SetParent(_playerBody);
+        _currentItem.localRotation = _playerBody.localRotation * Quaternion.Euler(_currentDropRotationOffset);
+        _currentItem.localPosition = _playerBody.localPosition + _currentDropPositionOffset;
         _currentItem.SetParent(null);
-        _currentItem.GetComponent<IDroppable>().Drop();
+        _currentItem.GetComponent<IDroppable>().Drop(_playerBody.forward);
         _currentItem = null;
     }
 

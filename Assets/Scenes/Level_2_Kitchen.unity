@@ -3712,7 +3712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadModeType: 1
-  _scene: 1
+  _scene: 3
   _ceiling: {fileID: 1377380099}
 --- !u!65 &1130222732
 BoxCollider:
@@ -4465,7 +4465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690493941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.259, y: 0.805, z: 0.342}
+  m_LocalPosition: {x: 2.33, y: 0.81, z: -3.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4561,7 +4561,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.39444444
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5123,7 +5123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadModeType: 0
-  _scene: 3
+  _scene: 5
   _ceiling: {fileID: 0}
 --- !u!65 &1912446260
 BoxCollider:

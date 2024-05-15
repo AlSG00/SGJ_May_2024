@@ -1011,6 +1011,11 @@ PrefabInstance:
       propertyPath: _isActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6632256426756296763, guid: 9030f2001c3d498498a50d7843b9b7d7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6637207190706523506, guid: 9030f2001c3d498498a50d7843b9b7d7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3137,7 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadModeType: 0
-  _scene: 2
+  _scene: 4
   _ceiling: {fileID: 0}
 --- !u!65 &1724230107
 BoxCollider:
@@ -3347,7 +3352,7 @@ PrefabInstance:
     - target: {fileID: 893407537286965461, guid: d3e37c5795dea4443a18a6619cd84ecc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4945679
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 893407537286965461, guid: d3e37c5795dea4443a18a6619cd84ecc,
         type: 3}

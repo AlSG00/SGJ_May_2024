@@ -771,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.10437
+      value: 15.23
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -781,12 +781,12 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.123
+      value: -15.309
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.6724611
+      value: -0.68664956
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -796,7 +796,7 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7401324
+      value: -0.7269886
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -811,7 +811,7 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -264.515
+      value: -266.73102
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -1682,7 +1682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadModeType: 0
-  _scene: 5
+  _scene: 7
   _ceiling: {fileID: 0}
 --- !u!65 &801289589
 BoxCollider:
@@ -6627,7 +6627,7 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.079506
+      value: 15.041
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -6637,7 +6637,7 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.3
+      value: -15.518
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -7196,17 +7196,17 @@ PrefabInstance:
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.07
+      value: 21.027
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.463
+      value: -1.426
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.969
+      value: -14.095
       objectReference: {fileID: 0}
     - target: {fileID: 6253633598273575810, guid: 55bfac79443f92f438eb0e4f86cf22a8,
         type: 3}
@@ -7302,7 +7302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadModeType: 1
-  _scene: 3
+  _scene: 5
   _ceiling: {fileID: 1505666057}
 --- !u!65 &1887600545
 BoxCollider:

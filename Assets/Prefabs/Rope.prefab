@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6902224090889693703}
   - component: {fileID: 8659673815633059533}
   - component: {fileID: 8659673815633059534}
-  - component: {fileID: 8659673815633059535}
+  - component: {fileID: 652115847437747320}
   - component: {fileID: 8659673815633059532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rope
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -101,8 +101,8 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &8659673815633059535
+  m_CollisionDetection: 1
+--- !u!65 &652115847437747320
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,8 +113,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.42385158, y: 1.2024561, z: 0.15996535}
-  m_Center: {x: 0.0023281875, y: 0.0018816295, z: 0.069665045}
+  m_Size: {x: 0.4238516, y: 1.2024561, z: 0.15996538}
+  m_Center: {x: 0.002328177, y: 0.0018740017, z: 0.06966504}
 --- !u!114 &8659673815633059532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,10 +127,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141b9bf301261b54eae89486a94cc722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 3
   RequiresAnItem: 0
@@ -140,3 +186,8 @@ MonoBehaviour:
   colliderArray: []
   _inHandPositionOffset: {x: -0.4280014, y: 0.5480022, z: 0.507}
   _inHandRotationOffset: {x: -172.356, y: -51.80701, z: 9.597}
+  _inHandDropPositionOffset: {x: 0, y: -0.35, z: 0}
+  _inHandDropRotationOffset: {x: 0, y: 0, z: 0}
+  references:
+    version: 2
+    RefIds: []

@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 5313220981194574363}
   - component: {fileID: 354089985422084439}
   - component: {fileID: 9184474940879231354}
-  - component: {fileID: 354089985422084437}
   - component: {fileID: 354089985422084438}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,18 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &354089985422084437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7381351835547110867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cd82082e0bffd4bac188951dd1198b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &354089985422084438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122,8 +109,7 @@ GameObject:
   - component: {fileID: 8191658838628694721}
   - component: {fileID: 4320384508172786952}
   - component: {fileID: 4320384508172786951}
-  - component: {fileID: 4320384508172786950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,18 +194,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.47498858, y: 0.027986484, z: 0.03018791}
   m_Center: {x: 1.0494722, y: 0.00018784491, z: 0.0026084897}
---- !u!114 &4320384508172786950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7397716408506609473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cd82082e0bffd4bac188951dd1198b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8429354432869492579
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8429354432869492578}
   - component: {fileID: 8429354432869492577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: _shovel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8429354433994579253}
   - component: {fileID: 8429354433994579254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,8 +389,7 @@ GameObject:
   - component: {fileID: 8663374151333833476}
   - component: {fileID: 8663374151333833475}
   - component: {fileID: 8663374151333833474}
-  - component: {fileID: 8663374151333833473}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shovel
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -456,6 +429,51 @@ MonoBehaviour:
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 0
   RequiresAnItem: 0
@@ -463,13 +481,18 @@ MonoBehaviour:
   _internalAudio: {fileID: 8300000, guid: 10ddb8bbcbba51e4e929928fb568b57b, type: 3}
   _useAudio: {fileID: 0}
   _inHandPositionOffset: {x: -0.5, y: 0.6, z: 0.572}
-  _inHandRotationOffset: {x: 0.6841929, y: 0.68820053, z: 0.03631682, w: -0.23862371}
+  _inHandRotationOffset: {x: -22.118, y: 197.511, z: -273.783}
+  _inHandDropPositionOffset: {x: 0, y: 0, z: 0}
+  _inHandDropRotationOffset: {x: 0, y: 180, z: 90}
   colliderArray:
   - {fileID: 354089985422084438}
   - {fileID: 4320384508172786951}
   _animator: {fileID: 8429354432869492577}
   _audioSource: {fileID: 8429354433994579254}
   _remainingUses: 9
+  references:
+    version: 2
+    RefIds: []
 --- !u!65 &8663374151333833475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -498,16 +521,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &8663374151333833473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8663374151333833477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cd82082e0bffd4bac188951dd1198b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CollisionDetection: 1

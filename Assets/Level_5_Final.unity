@@ -6513,7 +6513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadModeType: 1
-  _scene: 5
+  _scene: 7
   _ceiling: {fileID: 1739369651}
 --- !u!65 &1753412939
 BoxCollider:

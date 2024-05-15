@@ -8,10 +8,13 @@ public class InteractableMetalPipes : InteractableItem, IDroppable
     [SerializeField] private Collider[] colliderArray;
     [SerializeField] private Vector3 _inHandPositionOffset;
     [SerializeField] private Vector3 _inHandRotationOffset;
-    private Quaternion _rotationOffset;
+    [SerializeField] private Vector3 _inHandDropPositionOffset;
+    [SerializeField] private Vector3 _inHandDropRotationOffset;
+    //private Quaternion _rotationOffset;
+    public Quaternion _droppedRotationOffset { get; private set; }
     private Rigidbody _rigidBody;
 
-    public static event System.Action<Transform, Vector3, Quaternion> PickingPipes;
+    public static event System.Action<Transform, Vector3, Vector3, Vector3, Vector3> PickingPipes;
     public static event System.Action PipesUsed;
 
     private void Awake()
@@ -27,12 +30,13 @@ public class InteractableMetalPipes : InteractableItem, IDroppable
             collider.enabled = false;
         }
 
-        PickingPipes?.Invoke(transform, _inHandPositionOffset, Quaternion.Euler(_inHandRotationOffset));
+        PickingPipes?.Invoke(transform, _inHandPositionOffset, _inHandRotationOffset, _inHandDropPositionOffset, _inHandDropRotationOffset);
     }
 
-    public void Drop()
+    public void Drop(Vector3 direction)
     {
         _rigidBody.isKinematic = false;
+        _rigidBody.AddForce(direction, ForceMode.Impulse);
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;

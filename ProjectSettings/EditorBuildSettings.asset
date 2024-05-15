@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level_5_Final.unity
     guid: 9b2a847f630bf8344b4679f0037c4ba3
-  - enabled: 1
+  - enabled: 0
     path: Assets/EntryPoint.unity
     guid: e9306c96f293527469b4c6758ce2a4f7
   m_configObjects:

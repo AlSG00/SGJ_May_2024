@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9100171521279659808}
   - component: {fileID: 6661242008713340139}
   - component: {fileID: 5151000766045095396}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5906999957897879904}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.7476515, y: -0.056626268, z: 2.1755357}
+  m_LocalPosition: {x: -0.011, y: -0.166, z: 0}
   m_LocalScale: {x: 1.4322181, y: 0.65331, z: 1.337262}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1563635399790927670}
   - component: {fileID: 7500977443610605245}
   - component: {fileID: 536187839346917568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MetalPipes
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 6738104343372431672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 59.804, y: 7.783, z: 7.863}
-  m_LocalScale: {x: 0.49619, y: 0.49619, z: 0.49619}
+  m_LocalScale: {x: 0.49619108, y: 0.49619097, z: 0.49619046}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9100171521279659808}
@@ -134,7 +134,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &7500977443610605245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.30427858, y: 0.33030432, z: 3.706068}
-  m_Center: {x: -1.7393423, y: 0.109267294, z: 2.3117044}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &536187839346917568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,10 +160,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f407f8e7ef45140a31c3c523e02140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HintMessage: 
   CantInteractMessage: 
   NeedItemMessage: 
   WrongItemMessage: 
   InteractionSuccesfulMessage: 
+  HintLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CantInteractLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  NeedItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  WrongItemLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  InteractionSuccesfulLocalizedMessage:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   CanInteract: 1
   ItemType: 5
   RequiresAnItem: 0
@@ -171,8 +217,13 @@ MonoBehaviour:
   _internalAudio: {fileID: 8300000, guid: 10ddb8bbcbba51e4e929928fb568b57b, type: 3}
   _useAudio: {fileID: 8300000, guid: 7a7996691ada307489b8d9bda1490dc4, type: 3}
   colliderArray: []
-  _inHandPositionOffset: {x: 0.5279999, y: -1.085999, z: 0.08899975}
-  _inHandRotationOffset: {x: -78.596, y: 0, z: 0}
+  _inHandPositionOffset: {x: -0.28, y: -0.05, z: 0.16}
+  _inHandRotationOffset: {x: 100, y: 0, z: 0}
+  _inHandDropPositionOffset: {x: 0, y: -0.52, z: 0.055}
+  _inHandDropRotationOffset: {x: 90, y: 0, z: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &7829838835046604972
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +235,7 @@ GameObject:
   - component: {fileID: 5789046649621364110}
   - component: {fileID: 5698254650540247036}
   - component: {fileID: 8845876059633633909}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7829838835046604972}
   m_LocalRotation: {x: 0.000000021110981, y: 0.0000000056566707, z: 0.25881907, w: 0.9659259}
-  m_LocalPosition: {x: -1.6523148, y: 0.18948862, z: 0.46445543}
+  m_LocalPosition: {x: 0.086, y: 0.079, z: -1.838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
