@@ -19,7 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 88003092480
-    m_Localized: '[W.A.S.D] Walk<br>[SHIFT] Run<br>[E] Interact<br>[G] Drop item'
+    m_Localized: '[W.A.S.D] Walk<br>[SHIFT] Run<br>[E] Interact<br>[G] Drop item<br>[Esc]
+      Pause'
     m_Metadata:
       m_Items: []
   - m_Id: 122853564416
@@ -260,6 +261,26 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 759006115438592
     m_Localized: CONTINUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1458730069958656
+    m_Localized: MASTER VOLUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1458755512606720
+    m_Localized: MOUSE SENSITIVITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1481719654162432
+    m_Localized: MOUSE SMOOTHING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1484848776912896
+    m_Localized: RESET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1486176076996608
+    m_Localized: RESET
     m_Metadata:
       m_Items: []
   references:

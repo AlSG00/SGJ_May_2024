@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableKey : InteractableItem, IDroppable
 {
-    
+    [SerializeField] private Renderer[] _meshes;
     [SerializeField] private Collider[] colliderArray;
     [SerializeField] private Vector3 _inHandPositionOffset;
     [SerializeField] private Vector3 _inHandRotationOffset;
@@ -33,6 +33,12 @@ public class InteractableKey : InteractableItem, IDroppable
         {
             collider.enabled = true;
         }
+
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        }
+
         PickingKey?.Invoke(gameObject.transform, _inHandPositionOffset, _inHandRotationOffset, _inHandDropPositionOffset, _inHandDropRotationOffset);
     }
 
@@ -43,6 +49,11 @@ public class InteractableKey : InteractableItem, IDroppable
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;
+        }
+
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
     }
 

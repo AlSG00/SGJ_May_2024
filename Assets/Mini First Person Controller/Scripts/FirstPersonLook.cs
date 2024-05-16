@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FirstPersonLook : MonoBehaviour
 {
-    [SerializeField] private Transform _character;
+    [SerializeField] private Rigidbody _character;
     [SerializeField] private float _sensitivity = 2;
     [SerializeField] private float _smoothing = 1.5f;
 
@@ -20,7 +20,7 @@ public class FirstPersonLook : MonoBehaviour
     [SerializeField] private float _amplitudeInterplationStep;
     [SerializeField] private float _frequencyInterplationStep;
 
-
+    [SerializeField] private GameSettings _gameSettings;
     private Vector2 _velocity;
     private Vector2 _frameVelocity;
     private CinemachineBasicMultiChannelPerlin _cmCameraPerlin;
@@ -31,56 +31,72 @@ public class FirstPersonLook : MonoBehaviour
 
     private void OnEnable()
     {
+        SetMouseSensitivitySlider.SensitivityChanged += SetSensitivity;
+        SetMouseSmoothingSlider.SmoothingChanged += SetSmoothing;
         FirstPersonMovement.Moving += SetMovementShaking;
     }
 
     private void OnDisable()
     {
+        SetMouseSensitivitySlider.SensitivityChanged -= SetSensitivity;
+        SetMouseSmoothingSlider.SmoothingChanged -= SetSmoothing;
         FirstPersonMovement.Moving -= SetMovementShaking;
-    }
-
-    void Reset()
-    {
-        _character = GetComponentInParent<FirstPersonMovement>().transform;
     }
 
     void Start()
     {
+        _sensitivity = _gameSettings.MouseSensitivity;
+        _smoothing = _gameSettings.MouseSmoothing;
         //Cursor.lockState = CursorLockMode.Locked;
-        _character.localRotation = Quaternion.AngleAxis(-198, Vector3.up);
+        _character.transform.localRotation = Quaternion.AngleAxis(-198, Vector3.up);
         _cmCameraPerlin = _cmCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
 
         PlayerSpawn();
     }
 
-    private async void PlayerSpawn()
-    {
-        await Task.Delay(2000);
-        Enabled = true;
-    }
-
-    void LateUpdate()
+    void Update()
     {
         if (Enabled == false)
         {
-            //_frameVelocity = mouseDelta;
             return;
         }
 
         Look();
     }
 
-    //private Vector2 mouseDelta;
     private void Look()
     {
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-        Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * _sensitivity);
+        //Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * _sensitivity);
+        Vector2 rawFrameVelocity = mouseDelta * (Vector2.one * _sensitivity);
         _frameVelocity = Vector2.Lerp(_frameVelocity, rawFrameVelocity, (1 / _smoothing) * Time.deltaTime);
         _velocity += _frameVelocity;
         _velocity.y = Mathf.Clamp(_velocity.y, -90, 90);
 
-        transform.localRotation = Quaternion.AngleAxis(-_velocity.y, Vector3.right);
-        _character.localRotation = Quaternion.AngleAxis(/*_character.localRotation.x + */_velocity.x, Vector3.up);
+        var xQuat = Quaternion.AngleAxis(_velocity.x, Vector3.up);
+        var yQuat = Quaternion.AngleAxis(_velocity.y, Vector3.left);
+        transform.localRotation = xQuat * yQuat;
+        //transform.localRotation =
+        //transform.localRotation = Quaternion.AngleAxis(-_velocity.y, Vector3.right);
+        //transform.localRotation = Quaternion.AngleAxis(_velocity.x, Vector3.up);
+        //_character.transform.localRotation = Quaternion.AngleAxis(/*_character.localRotation.x + */_velocity.x, Vector3.up);
+    }
+
+    private void SetSensitivity(float value)
+    {
+        _sensitivity = value;
+    }
+
+    private void SetSmoothing(float value)
+    {
+        Debug.Log("smooooooth");
+        _smoothing = value;
+    }
+
+    private async void PlayerSpawn()
+    {
+        await Task.Delay(2000);
+        Enabled = true;
     }
 
     #region CAMERA SHAKING

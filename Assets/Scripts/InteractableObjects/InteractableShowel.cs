@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InteractableShowel : InteractableItem, IDroppable
 {
+    [SerializeField] private Renderer[] _meshes;
     [SerializeField] private Vector3 _inHandPositionOffset;
     [SerializeField] private Vector3 _inHandRotationOffset;
     [SerializeField] private Vector3 _inHandDropPositionOffset;
@@ -25,6 +26,12 @@ public class InteractableShowel : InteractableItem, IDroppable
         foreach (var collider in colliderArray)
         {
             collider.enabled = false;
+            collider.gameObject.layer = 11;
+        }
+
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         }
 
         PickingShovel?.Invoke(transform, _inHandPositionOffset, _inHandRotationOffset, _inHandDropPositionOffset, _inHandDropRotationOffset);
@@ -33,19 +40,30 @@ public class InteractableShowel : InteractableItem, IDroppable
 
     public void Drop(Vector3 direction)
     {
+        if (IsUsing)
+        {
+            return;
+        }
+
         Rigidbody rigidBody = GetComponent<Rigidbody>();
         rigidBody.isKinematic = false;
         rigidBody.AddForce(direction, ForceMode.Impulse);
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;
+            collider.gameObject.layer = 9;
+        }
+
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
     }
 
-    private bool _isUsing = false;
+    //private bool _isUsing = false;
     public async override void UseAsync(/*InteractableItem interactableItem*/)
     {
-        if (_isUsing)
+        if (IsUsing)
         {
             return;
         }
@@ -64,6 +82,7 @@ public class InteractableShowel : InteractableItem, IDroppable
             CanInteract = false;
             Destroy(gameObject, 2f);
         }
+
         IsUsing = false;
     }
 }

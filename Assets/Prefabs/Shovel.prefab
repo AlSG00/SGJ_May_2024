@@ -480,6 +480,9 @@ MonoBehaviour:
   RequiredItemType: 0
   _internalAudio: {fileID: 8300000, guid: 10ddb8bbcbba51e4e929928fb568b57b, type: 3}
   _useAudio: {fileID: 0}
+  _meshes:
+  - {fileID: 9184474940879231354}
+  - {fileID: 4320384508172786952}
   _inHandPositionOffset: {x: -0.5, y: 0.6, z: 0.572}
   _inHandRotationOffset: {x: -22.118, y: 197.511, z: -273.783}
   _inHandDropPositionOffset: {x: 0, y: 0, z: 0}

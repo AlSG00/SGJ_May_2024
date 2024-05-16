@@ -8,7 +8,7 @@ public class ItemSway : MonoBehaviour
     [SerializeField] private float smooth;
     [SerializeField] private float multiplier;
 
-    private void Update()
+    private void LateUpdate()
     {
         float mouseX = Input.GetAxisRaw("Mouse X") * multiplier;
         float mouseY = Input.GetAxisRaw("Mouse Y") * multiplier;

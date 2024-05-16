@@ -79,6 +79,12 @@ public class InteractWithWearableItem : MonoBehaviour
         {
             return;
         }
+
+        if (_currentItem.GetComponent<InteractableItem>().IsUsing)
+        {
+            return;
+        }
+
         _currentItem.SetParent(_playerBody);
         _currentItem.localRotation = _playerBody.localRotation * Quaternion.Euler(_currentDropRotationOffset);
         _currentItem.localPosition = _playerBody.localPosition + _currentDropPositionOffset;

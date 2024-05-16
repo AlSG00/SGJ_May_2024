@@ -53,9 +53,9 @@ public class FirstPersonMovement : MonoBehaviour
     RaycastHit hit;
     private void CheckGround()
     {
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.955f, _layer) == false)
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1f, _layer) == false)
         {
-            _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _rigidbody.velocity.y - 0.5f, _rigidbody.velocity.z);
+            _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _rigidbody.velocity.y - 0.97f, _rigidbody.velocity.z);
         }
     }
 
@@ -63,12 +63,19 @@ public class FirstPersonMovement : MonoBehaviour
     {
         Move();
 
-        Vector2 targetVelocity = new Vector2(_horizontalInput * _targetMovingSpeed, _verticalInput * _targetMovingSpeed);
-
+        Vector2 targetVelocity = new Vector2(_horizontalInput /** _targetMovingSpeed*/, _verticalInput /** _targetMovingSpeed*/);
         //_rigidbody.AddForce(transform.rotation * new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y), ForceMode.VelocityChange);
 
-        _rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y);
+        //_rigidbody.velocity = transform.rotation * /*new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y);*/
+
+        
+
+        Quaternion rotation = Quaternion.Euler(0, _cameraLook.transform.rotation.eulerAngles.y, 0);
+        Vector3 moveDirection = (rotation * new Vector3(targetVelocity.x, 0, targetVelocity.y));
+
+        _rigidbody.velocity = moveDirection * _targetMovingSpeed/* _cameraLook.transform*/;
         _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, _targetMovingSpeed);
+
     }
 
     private void Move()

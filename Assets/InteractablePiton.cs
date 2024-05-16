@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InteractablePiton : InteractableItem, IDroppable
 {
+    [SerializeField] private Renderer[] _meshes;
     [SerializeField] private Collider[] colliderArray;
     [SerializeField] private Vector3 _inHandPositionOffset;
     [SerializeField] private Vector3 _inHandRotationOffset;
@@ -27,6 +28,10 @@ public class InteractablePiton : InteractableItem, IDroppable
             collider.enabled = false;
         }
 
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        }
 
         PickingPiton?.Invoke(transform, _inHandPositionOffset, _inHandRotationOffset, _inHandDropPositionOffset, _inHandDropRotationOffset);
     }
@@ -38,6 +43,11 @@ public class InteractablePiton : InteractableItem, IDroppable
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;
+        }
+
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
     }
 

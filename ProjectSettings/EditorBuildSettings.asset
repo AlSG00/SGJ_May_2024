@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SetLocale.unity
+    path: Assets/Scenes/SetLocale.unity
     guid: aac0285a89b84c44e88516a71039b029
   - enabled: 1
-    path: Assets/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 087608a6a672a2c4b89af1b6a826920d
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
@@ -27,13 +27,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_3_LivingRoom_2.unity
     guid: 0413862bc98f58f4e9c8f3ceb87eed09
   - enabled: 1
-    path: Assets/Level_4_PantryRoom.unity
+    path: Assets/Scenes/Level_4_PantryRoom.unity
     guid: 372285e23562f3544938582013d0afa2
   - enabled: 1
-    path: Assets/Level_5_Final.unity
+    path: Assets/Scenes/Level_5_Final.unity
     guid: 9b2a847f630bf8344b4679f0037c4ba3
   - enabled: 0
-    path: Assets/EntryPoint.unity
+    path: Assets/Scenes/EntryPoint.unity
     guid: e9306c96f293527469b4c6758ce2a4f7
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 342439779e97742459d226366f0cc95e,

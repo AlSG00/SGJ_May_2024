@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractableRope : InteractableItem, IDroppable
 {
+    [SerializeField] private Renderer[] _meshes;
     [SerializeField] private Collider[] colliderArray;
     [SerializeField] private Vector3 _inHandPositionOffset;
     [SerializeField] private Vector3 _inHandRotationOffset;
@@ -28,6 +29,10 @@ public class InteractableRope : InteractableItem, IDroppable
             collider.enabled = false;
         }
 
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        }
 
         PickingRope?.Invoke(transform, _inHandPositionOffset, _inHandRotationOffset, _inHandDropPositionOffset, _inHandDropRotationOffset);
     }
@@ -39,6 +44,11 @@ public class InteractableRope : InteractableItem, IDroppable
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;
+        }
+
+        foreach (var mesh in _meshes)
+        {
+            mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
     }
 

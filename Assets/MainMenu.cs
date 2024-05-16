@@ -11,12 +11,12 @@ public class MainMenu : MonoBehaviour
 
     private void OnEnable()
     {
-       // SetLocaleButton.LocalizationPicked += Show;
+        SetLocaleButton.LocalizationPicked += Show;
     }
 
     private void OnDisable()
     {
-        //SetLocaleButton.LocalizationPicked -= Show;
+        SetLocaleButton.LocalizationPicked -= Show;
     }
 
     private void Start()

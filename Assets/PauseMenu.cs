@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] private PlayerFlashlight _flashlight;
+    [SerializeField] private ObjectInteraction _interaction;
     [SerializeField] private FirstPersonLook _look;
     [SerializeField] private GameObject[] _uiElements;
+    [SerializeField] private GameObject _settingsMenu;
     [SerializeField] private int _showElementDelay;
     private bool _isVisible;
 
@@ -37,6 +40,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0;
         _isVisible = true;
         _look.Enabled = false;
+        _flashlight.enabled = false;
+        _interaction.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         foreach (var element in _uiElements)
         {
@@ -49,10 +54,17 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         _isVisible = false;
         _look.Enabled = true;
+        _flashlight.enabled = true;
+        _interaction.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         foreach (var element in _uiElements)
         {
             element.SetActive(false);
+        }
+
+        if (_settingsMenu.activeSelf)
+        {
+            _settingsMenu.SetActive(false);
         }
     }
 }
