@@ -32,11 +32,13 @@ public class InteractableKey : InteractableItem, IDroppable
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;
+            collider.gameObject.layer = 11;
         }
 
         foreach (var mesh in _meshes)
         {
             mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            mesh.gameObject.layer = 11;
         }
 
         PickingKey?.Invoke(gameObject.transform, _inHandPositionOffset, _inHandRotationOffset, _inHandDropPositionOffset, _inHandDropRotationOffset);
@@ -49,11 +51,13 @@ public class InteractableKey : InteractableItem, IDroppable
         foreach (var collider in colliderArray)
         {
             collider.enabled = true;
+            collider.gameObject.layer = 9;
         }
 
         foreach (var mesh in _meshes)
         {
             mesh.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+            mesh.gameObject.layer = 9;
         }
     }
 

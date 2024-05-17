@@ -19,7 +19,7 @@ public class ObjectInteraction : MonoBehaviour
         {
             if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out _hit, _raycastDistance, _layer))
             {
-                Debug.Log(_hit.transform.name);
+                //Debug.Log(_hit.transform.name);
                 if (_hit.transform.CompareTag(interactableTag))
                 {
                     InteractableItem interactable = _hit.transform.gameObject.GetComponent<InteractableItem>();

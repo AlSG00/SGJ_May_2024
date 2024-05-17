@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private PlayerFlashlight _flashlight;
     [SerializeField] private ObjectInteraction _interaction;
     [SerializeField] private FirstPersonLook _look;
+    [SerializeField] private InteractWithWearableItem _wearableItem;
     [SerializeField] private GameObject[] _uiElements;
     [SerializeField] private GameObject _settingsMenu;
     [SerializeField] private int _showElementDelay;
@@ -42,6 +43,7 @@ public class PauseMenu : MonoBehaviour
         _look.Enabled = false;
         _flashlight.enabled = false;
         _interaction.enabled = false;
+        _wearableItem.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         foreach (var element in _uiElements)
         {
@@ -56,6 +58,7 @@ public class PauseMenu : MonoBehaviour
         _look.Enabled = true;
         _flashlight.enabled = true;
         _interaction.enabled = true;
+        _wearableItem.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         foreach (var element in _uiElements)
         {

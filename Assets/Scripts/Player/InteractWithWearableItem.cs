@@ -9,7 +9,7 @@ public class InteractWithWearableItem : MonoBehaviour
             return _currentItem;
         }
     }
-
+    [SerializeField] private Transform _playerLook;
     [SerializeField] private Transform _playerBody;
     [SerializeField] private Transform _handPivot;
     [SerializeField] private Transform _currentItem = null;
@@ -17,7 +17,6 @@ public class InteractWithWearableItem : MonoBehaviour
     //[SerializeField] private Quaternion _currentRotationOffset;
     [SerializeField] private Vector3 _currentDropPositionOffset;
     [SerializeField] private Vector3 _currentDropRotationOffset;
-
 
     private void OnEnable()
     {
@@ -89,7 +88,7 @@ public class InteractWithWearableItem : MonoBehaviour
         _currentItem.localRotation = _playerBody.localRotation * Quaternion.Euler(_currentDropRotationOffset);
         _currentItem.localPosition = _playerBody.localPosition + _currentDropPositionOffset;
         _currentItem.SetParent(null);
-        _currentItem.GetComponent<IDroppable>().Drop(_playerBody.forward);
+        _currentItem.GetComponent<IDroppable>().Drop(_playerLook.forward);
         _currentItem = null;
     }
 

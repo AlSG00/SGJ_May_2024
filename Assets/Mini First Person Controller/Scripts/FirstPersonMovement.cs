@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
@@ -35,6 +34,7 @@ public class FirstPersonMovement : MonoBehaviour
     private float _horizontalInput;
     private float _verticalInput;
     private float _targetMovingSpeed;
+    private float _verticalSpeed;
 
     public static event System.Action<Movement> Moving;
 
@@ -43,6 +43,17 @@ public class FirstPersonMovement : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
+    private void FixedUpdate()
+    {
+        Move();
+
+        Vector2 targetVelocity = new Vector2(_horizontalInput, _verticalInput);
+        Quaternion rotation = Quaternion.Euler(0, _cameraLook.transform.rotation.eulerAngles.y, 0);
+
+        _rigidbody.velocity = rotation * new Vector3(targetVelocity.x * _targetMovingSpeed, _verticalSpeed, targetVelocity.y * _targetMovingSpeed);
+        _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, _targetMovingSpeed);
+        Debug.Log(_rigidbody.velocity);
+    }
 
     void Update()
     {
@@ -53,36 +64,28 @@ public class FirstPersonMovement : MonoBehaviour
     RaycastHit hit;
     private void CheckGround()
     {
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1f, _layer) == false)
+        if (Physics.SphereCast(transform.position, 0.1f, Vector3.down, out hit, 1f, _layer) == false)
         {
-            _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _rigidbody.velocity.y - 0.97f, _rigidbody.velocity.z);
+            canRun = false;
+            _verticalSpeed = -5f;
+        }
+        else
+        {
+            canRun = true;
+            _verticalSpeed = 0f;
         }
     }
 
-    private void FixedUpdate()
-    {
-        Move();
 
-        Vector2 targetVelocity = new Vector2(_horizontalInput /** _targetMovingSpeed*/, _verticalInput /** _targetMovingSpeed*/);
-        //_rigidbody.AddForce(transform.rotation * new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y), ForceMode.VelocityChange);
-
-        //_rigidbody.velocity = transform.rotation * /*new Vector3(targetVelocity.x, _rigidbody.velocity.y, targetVelocity.y);*/
-
-        
-
-        Quaternion rotation = Quaternion.Euler(0, _cameraLook.transform.rotation.eulerAngles.y, 0);
-        Vector3 moveDirection = (rotation * new Vector3(targetVelocity.x, 0, targetVelocity.y));
-
-        _rigidbody.velocity = moveDirection * _targetMovingSpeed/* _cameraLook.transform*/;
-        _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, _targetMovingSpeed);
-
-    }
 
     private void Move()
     {
         IsRunning = Input.GetKey(runningKey);
+        if (canRun)
+        {
+            _targetMovingSpeed = IsRunning ? runSpeed : speed;
+        }
 
-        _targetMovingSpeed = IsRunning ? runSpeed : speed;
         _horizontalInput = Input.GetAxis(_horizontalAxis);
         _verticalInput = Input.GetAxis(_verticalAxis);
     }

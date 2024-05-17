@@ -75,14 +75,15 @@ public class InteractableShowel : InteractableItem, IDroppable
         _audioSource.PlayOneShot(_audioSource.clip);
         await System.Threading.Tasks.Task.Delay(900);
 
+        IsUsing = false;
         if (_remainingUses <= 0)
         {
             //gameObject.transform.SetParent(null);
+            
             ShovelBroken?.Invoke();
             CanInteract = false;
             Destroy(gameObject, 2f);
         }
 
-        IsUsing = false;
     }
 }

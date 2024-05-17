@@ -183,6 +183,8 @@ MonoBehaviour:
   RequiredItemType: 0
   _internalAudio: {fileID: 8300000, guid: 10ddb8bbcbba51e4e929928fb568b57b, type: 3}
   _useAudio: {fileID: 8300000, guid: 5b6c4333683c4404d8b21cb62cfc00dd, type: 3}
+  _meshes:
+  - {fileID: 8659673815633059533}
   colliderArray: []
   _inHandPositionOffset: {x: -0.4280014, y: 0.5480022, z: 0.507}
   _inHandRotationOffset: {x: -172.356, y: -51.80701, z: 9.597}
