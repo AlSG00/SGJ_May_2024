@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnobjectTrigger : MonoBehaviour
+public class SpawnObjectTrigger : MonoBehaviour
 {
 
     [SerializeField] private GameObject[] _objects;

@@ -20,13 +20,13 @@ public class InteractWithWearableItem : MonoBehaviour
 
     private void OnEnable()
     {
-        InteractableShowel.PickingShovel += GetItem;
+        InteractableShovel.PickingShovel += GetItem;
         InteractableKey.PickingKey += GetItem;
         InteractablePiton.PickingPiton += GetItem;
         InteractableRope.PickingRope += GetItem;
         InteractableMetalPipes.PickingPipes += GetItem;
 
-        InteractableShowel.ShovelBroken += DropItem;
+        InteractableShovel.ShovelBroken += DropItem;
         InteractableKey.KeyUsed += DropItem;
         InteractablePiton.PitonUsed += DropItem;
         InteractableRope.RopeUsed += DropItem;
@@ -35,13 +35,13 @@ public class InteractWithWearableItem : MonoBehaviour
 
     private void OnDisable()
     {
-        InteractableShowel.PickingShovel -= GetItem;
+        InteractableShovel.PickingShovel -= GetItem;
         InteractableKey.PickingKey -= GetItem;
         InteractablePiton.PickingPiton -= GetItem;
         InteractableRope.PickingRope -= GetItem;
         InteractableMetalPipes.PickingPipes -= GetItem;
 
-        InteractableShowel.ShovelBroken -= DropItem;
+        InteractableShovel.ShovelBroken -= DropItem;
         InteractableKey.KeyUsed -= DropItem;
         InteractablePiton.PitonUsed -= DropItem;
         InteractableRope.RopeUsed -= DropItem;

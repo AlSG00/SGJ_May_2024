@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InteractableShowel : InteractableItem, IDroppable
+public class InteractableShovel : InteractableItem, IDroppable
 {
     [SerializeField] private Renderer[] _meshes;
     [SerializeField] private Vector3 _inHandPositionOffset;
