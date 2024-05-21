@@ -3,12 +3,6 @@ using UnityEngine.Localization;
 
 public abstract class InteractableItem : MonoBehaviour
 {
-    public string HintMessage;
-    public string CantInteractMessage;
-    public string NeedItemMessage;
-    public string WrongItemMessage;
-    public string InteractionSuccesfulMessage;
-
     public LocalizedString HintLocalizedMessage;
     public LocalizedString CantInteractLocalizedMessage;
     public LocalizedString NeedItemLocalizedMessage;
