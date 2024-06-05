@@ -50,7 +50,7 @@ public class InteractWithWearableItem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             DropItem();
         }

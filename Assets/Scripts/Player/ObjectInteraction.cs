@@ -87,6 +87,11 @@ public class ObjectInteraction : MonoBehaviour
                         InteractResult?.Invoke(interactable.InteractionSuccesfulLocalizedMessage.GetLocalizedString());
                     }
 
+                    if (_wearableItem.GetCurrentItem() != null)
+                    {
+                        return;
+                    }
+
                     interactable.Interact();
                     InteractResultAudio?.Invoke(interactable.InteractAudio);
                 }
