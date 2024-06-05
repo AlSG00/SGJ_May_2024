@@ -73,7 +73,6 @@ public class ObjectInteraction : MonoBehaviour
                         if (interactable.InteractionSuccesfulLocalizedMessage.IsEmpty == false)
                         {
                             InteractResult?.Invoke(interactable.InteractionSuccesfulLocalizedMessage.GetLocalizedString());
-                            //interactable.InteractionSuccesfulLocalizedMessage.;
                         }
                         return;
                     }
@@ -86,7 +85,6 @@ public class ObjectInteraction : MonoBehaviour
                     if (interactable.InteractionSuccesfulLocalizedMessage.IsEmpty == false)
                     {
                         InteractResult?.Invoke(interactable.InteractionSuccesfulLocalizedMessage.GetLocalizedString());
-                        //interactable.InteractionSuccesfulMessage = "";
                     }
 
                     interactable.Interact();

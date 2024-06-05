@@ -79,6 +79,11 @@ public class FootstepAudioController : MonoBehaviour
         }
 
         AudioClip[] clipArrayToPlay = _footstepAudioClipArray.Find(clipCollection => clipCollection.Name == surface)._audiocClip;
+        if (clipArrayToPlay == null)
+        {
+            return;
+        }
+
         int indexToPlay = Random.Range(0, clipArrayToPlay.Length);
         if (indexToPlay == _previousClipIndex)
         {

@@ -52,7 +52,6 @@ public class FirstPersonMovement : MonoBehaviour
 
         _rigidbody.velocity = rotation * new Vector3(targetVelocity.x * _targetMovingSpeed, _verticalSpeed, targetVelocity.y * _targetMovingSpeed);
         _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, _targetMovingSpeed);
-        Debug.Log(_rigidbody.velocity);
     }
 
     void Update()

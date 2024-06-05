@@ -14029,11 +14029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce2db1baf49a1f45bce43c2338138b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HintMessage: 
-  CantInteractMessage: 
-  NeedItemMessage: 
-  WrongItemMessage: 
-  InteractionSuccesfulMessage: 
   HintLocalizedMessage:
     m_TableReference:
       m_TableCollectionName: 
@@ -14134,11 +14129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce2db1baf49a1f45bce43c2338138b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HintMessage: 
-  CantInteractMessage: 
-  NeedItemMessage: 
-  WrongItemMessage: 
-  InteractionSuccesfulMessage: 
   HintLocalizedMessage:
     m_TableReference:
       m_TableCollectionName: 
