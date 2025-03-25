@@ -11,7 +11,6 @@ public class InteractableDoor : InteractableItem
     [SerializeField] private AudioClip _closeAudio;
     public override void Interact()
     {
-
         _animator.ResetTrigger("Close");
         _animator.ResetTrigger("Open");
         if (_isOpened)
